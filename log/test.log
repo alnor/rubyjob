@@ -1,0 +1,55 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO "vacancies" ("name", "lifetime", "skill_id", "created_at", "updated_at", "salary", "contacts") VALUES(NULL, NULL, NULL, '2012-03-20 09:40:49.735728', '2012-03-20 09:40:49.735728', NULL, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO "vacancies" ("name", "lifetime", "skill_id", "created_at", "updated_at", "salary", "contacts") VALUES(NULL, NULL, NULL, '2012-03-20 09:40:49.752015', '2012-03-20 09:40:49.752015', NULL, NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO "vacancies" ("name", "lifetime", "skill_id", "created_at", "updated_at", "salary", "contacts") VALUES(NULL, NULL, NULL, '2012-03-20 09:41:50.865576', '2012-03-20 09:41:50.865576', NULL, NULL) RETURNING "id"[0m
+  [4;36;1mSkill Load (0.9ms)[0m   [0;1mSELECT * FROM "skills" INNER JOIN "skills_vacancies" ON "skills".id = "skills_vacancies".skill_id WHERE ("skills_vacancies".vacancy_id = NULL ) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "vacancies" ("name", "lifetime", "skill_id", "created_at", "updated_at", "salary", "contacts") VALUES(NULL, NULL, NULL, '2012-03-20 09:41:50.884781', '2012-03-20 09:41:50.884781', NULL, NULL) RETURNING "id"[0m
+  [4;36;1mSkill Load (0.5ms)[0m   [0;1mSELECT * FROM "skills" INNER JOIN "skills_vacancies" ON "skills".id = "skills_vacancies".skill_id WHERE ("skills_vacancies".vacancy_id = NULL ) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "vacancies" ("name", "lifetime", "skill_id", "created_at", "updated_at", "salary", "contacts") VALUES(NULL, NULL, NULL, '2012-03-20 09:48:45.614332', '2012-03-20 09:48:45.614332', NULL, NULL) RETURNING "id"[0m
+  [4;36;1mSkill Load (1.4ms)[0m   [0;1mSELECT * FROM "skills" INNER JOIN "skills_vacancies" ON "skills".id = "skills_vacancies".skill_id WHERE ("skills_vacancies".vacancy_id = NULL ) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "vacancies" ("name", "lifetime", "skill_id", "created_at", "updated_at", "salary", "contacts") VALUES(NULL, NULL, NULL, '2012-03-20 09:48:45.633063', '2012-03-20 09:48:45.633063', NULL, NULL) RETURNING "id"[0m
+  [4;36;1mSkill Load (0.7ms)[0m   [0;1mSELECT * FROM "skills" INNER JOIN "skills_vacancies" ON "skills".id = "skills_vacancies".skill_id WHERE ("skills_vacancies".vacancy_id = NULL ) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m

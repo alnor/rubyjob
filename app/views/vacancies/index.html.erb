@@ -1,2 +1,38 @@
-<h1>Vacancies#index</h1>
-<p>Find me in app/views/vacancies/index.html.erb</p>
+<% content_for :application_title do %>
+	<title><%=t(:label_vacancies)%></title>
+<% end%>
+
+<% render :partial => 'layouts/menu/vacancies' %>
+
+<% content_for :page_header do %>
+  <%=t(:label_vacancies_list)%>
+<%end%>
+
+<% content_for :page_content do -%>
+
+  <div class="margin_page">
+  	<table cellpadding="0" width="100%" class="tbl">
+  		<tr>
+  			<th><%=t(:label_name)%></th>	
+  			<th><%=t(:label_lifetime)%></th>
+  			<th><%=t(:label_salary)%></th>
+  			<th><%=t(:label_contacts)%></th>
+  		</tr>		
+	  	<% if @vacancy.size>0 %>
+		    <% @vacancy.each do |vacancy|%>
+		  		<tr>
+		  			<td><%=link_to vacancy.name, {:controller=>'vacancies', :action=>'edit', :id=>vacancy.id}%></td>	
+		  			<td><%=vacancy.lifetime%></td>
+		  			<td><%=vacancy.salary%></td>
+		  			<td><%=vacancy.contacts%></td>		  					  					  			
+		  		</tr>		    
+		    <% end %>
+		<% else %>   
+	  		<tr>
+	  			<td><%=t(:label_no_items)%></td>	
+	  		</tr>			 
+	    <% end %>
+    </table>
+  </div>
+  
+<% end %>
