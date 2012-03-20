@@ -670,3 +670,171 @@ Served asset /main.js - 304 Not Modified (0ms)
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 15:10:01 +0400 2012
 Served asset /application.js - 304 Not Modified (0ms)
 Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/vacancies" for 127.0.0.1 at Tue Mar 20 15:22:49 +0400 2012
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (1.1ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+Rendered vacancies/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 67ms (Views: 60.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Mar 20 15:22:50 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Tue Mar 20 15:22:50 +0400 2012
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Mar 20 15:22:52 +0400 2012
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Tue Mar 20 15:22:54 +0400 2012
+Served asset /main.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 15:22:57 +0400 2012
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Mar 20 15:22:59 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/workers" for 127.0.0.1 at Tue Mar 20 15:25:30 +0400 2012
+PG::Error: ERROR:  relation "skills_workers" does not exist
+:           SELECT DISTINCT(attr.attname)
+          FROM pg_attribute attr
+          INNER JOIN pg_depend dep ON attr.attrelid = dep.refobjid AND attr.attnum = dep.refobjsubid
+          INNER JOIN pg_constraint cons ON attr.attrelid = cons.conrelid AND attr.attnum = cons.conkey[1]
+          WHERE cons.contype = 'p'
+            AND dep.refobjid = $1::regclass
+  Processing by WorkersController#index as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+Rendered workers/index.html.erb within layouts/application (22.9ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size):
+    18:   			<th><%=t(:label_salary)%></th>
+    19:   			<th><%=t(:label_contacts)%></th>
+    20:   		</tr>		
+    21: 	  	<% if @worker.size>0 %>
+    22: 		    <% @worker.each do |worker|%>
+    23: 		  		<tr>
+    24: 		  			<td><%=link_to worker.name, {:controller=>'workers', :action=>'edit', :id=>worker.id}%></td>	
+  app/views/workers/index.html.erb:21:in `_app_views_workers_index_html_erb___729459145__621690508'
+  app/views/workers/index.html.erb:11:in `_app_views_workers_index_html_erb___729459145__621690508'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/workers" for 127.0.0.1 at Tue Mar 20 15:26:18 +0400 2012
+PG::Error: ERROR:  relation "skills_workers" does not exist
+:           SELECT DISTINCT(attr.attname)
+          FROM pg_attribute attr
+          INNER JOIN pg_depend dep ON attr.attrelid = dep.refobjid AND attr.attnum = dep.refobjsubid
+          INNER JOIN pg_constraint cons ON attr.attrelid = cons.conrelid AND attr.attnum = cons.conkey[1]
+          WHERE cons.contype = 'p'
+            AND dep.refobjid = $1::regclass
+  Processing by WorkersController#index as HTML
+  [1m[36mWorker Load (0.7ms)[0m  [1mSELECT "workers".* FROM "workers" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered workers/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `lifetime' for #<Worker:0xb5cc64b4>):
+    22: 		    <% @worker.each do |worker|%>
+    23: 		  		<tr>
+    24: 		  			<td><%=link_to worker.name, {:controller=>'workers', :action=>'edit', :id=>worker.id}%></td>	
+    25: 		  			<td><%=worker.lifetime%></td>
+    26: 		  			<td><%=worker.salary%></td>
+    27: 		  			<td><%=worker.contacts%></td>		  					  					  			
+    28: 		  		</tr>		    
+  app/views/workers/index.html.erb:25:in `_app_views_workers_index_html_erb___729459145__621690508'
+  app/views/workers/index.html.erb:22:in `each'
+  app/views/workers/index.html.erb:22:in `_app_views_workers_index_html_erb___729459145__621690508'
+  app/views/workers/index.html.erb:11:in `_app_views_workers_index_html_erb___729459145__621690508'
+  app/controllers/workers_controller.rb:8:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/workers" for 127.0.0.1 at Tue Mar 20 15:27:16 +0400 2012
+PG::Error: ERROR:  relation "skills_workers" does not exist
+:           SELECT DISTINCT(attr.attname)
+          FROM pg_attribute attr
+          INNER JOIN pg_depend dep ON attr.attrelid = dep.refobjid AND attr.attnum = dep.refobjsubid
+          INNER JOIN pg_constraint cons ON attr.attrelid = cons.conrelid AND attr.attnum = cons.conkey[1]
+          WHERE cons.contype = 'p'
+            AND dep.refobjid = $1::regclass
+  Processing by WorkersController#index as HTML
+  [1m[35mWorker Load (0.7ms)[0m  SELECT "workers".* FROM "workers" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered workers/index.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `status' for #<Worker:0xb5b68a54>):
+    24: 		  			<td><%=link_to worker.name, {:controller=>'workers', :action=>'edit', :id=>worker.id}%></td>	
+    25: 		  			<td><%=worker.salary%></td>
+    26: 		  			<td><%=worker.contacts%></td>	
+    27: 		  			<td><%=worker.status%></td>	  					  					  			
+    28: 		  		</tr>		    
+    29: 		    <% end %>
+    30: 		<% else %>   
+  app/views/workers/index.html.erb:27:in `_app_views_workers_index_html_erb___729459145__623174198'
+  app/views/workers/index.html.erb:22:in `each'
+  app/views/workers/index.html.erb:22:in `_app_views_workers_index_html_erb___729459145__623174198'
+  app/views/workers/index.html.erb:11:in `_app_views_workers_index_html_erb___729459145__623174198'
+  app/controllers/workers_controller.rb:8:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (56.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (60.8ms)
+
+
+Started GET "/workers" for 127.0.0.1 at Tue Mar 20 15:27:31 +0400 2012
+PG::Error: ERROR:  relation "skills_workers" does not exist
+:           SELECT DISTINCT(attr.attname)
+          FROM pg_attribute attr
+          INNER JOIN pg_depend dep ON attr.attrelid = dep.refobjid AND attr.attnum = dep.refobjsubid
+          INNER JOIN pg_constraint cons ON attr.attrelid = cons.conrelid AND attr.attnum = cons.conkey[1]
+          WHERE cons.contype = 'p'
+            AND dep.refobjid = $1::regclass
+  Processing by WorkersController#index as HTML
+  [1m[36mWorker Load (0.4ms)[0m  [1mSELECT "workers".* FROM "workers" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered workers/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 37ms (Views: 31.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Mar 20 15:27:31 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Tue Mar 20 15:27:31 +0400 2012
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Tue Mar 20 15:27:31 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Mar 20 15:27:31 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Mar 20 15:27:31 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+Served asset /main.js - 304 Not Modified (32ms)
+Served asset /main.css - 304 Not Modified (40ms)
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 15:27:33 +0400 2012
+Served asset /application.js - 304 Not Modified (6ms)
