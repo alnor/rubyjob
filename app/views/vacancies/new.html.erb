@@ -1,21 +1,22 @@
-<% content_for('application_title') do %>
+<% content_for :application_title do %>
 <% end %>
 
 <% render :partial => 'layouts/menu/vacancies' %>
 
-<% content_for('page_header') do -%>
+<% content_for :page_header do %>
   <%=t(:label_vacancies_new)%>:
-<%end -%>
+<%end %>
 
-<% content_for('page_content') do -%>
+<% content_for :page_content do %>
 
   <div class="margin_page">
-    <% form_tag :action => 'create', :id=>@vacancy do -%>
-      <%=create_button %>
-      <%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies', :action=>'edit', :id=>@vacancy)+"'"}) %>
-    <% end -%>
+    <%= form_tag :action => 'create', :id=>@vacancy do -%>
+    	<%=render :partial=>'form'%>	
+      	<%=create_button %>
+      	<%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies', :action=>'edit', :id=>@vacancy)+"'"}) %>
+    <% end %>
   </div>
   
-<% end -%>
+<% end %>
 
 

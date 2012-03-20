@@ -838,3 +838,482 @@ Served asset /jquery.js - 304 Not Modified (30ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 15:27:33 +0400 2012
 Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 15:34:35 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+Rendered vacancies/new.html.erb within layouts/application (78.0ms)
+Completed 500 Internal Server Error in 100ms
+
+ActionView::Template::Error (undefined local variable or method `create_button' for #<#<Class:0xb5e7934c>:0xb5e75580>):
+    11: 
+    12:   <div class="margin_page">
+    13:     <% form_tag :action => 'create', :id=>@vacancy do -%>
+    14:       <%=create_button %>
+    15:       <%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies', :action=>'edit', :id=>@vacancy)+"'"}) %>
+    16:     <% end %>
+    17:   </div>
+  app/views/vacancies/new.html.erb:14:in `_app_views_vacancies_new_html_erb___1017422741__621657528'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__621657528'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__621657528'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.4ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 15:35:23 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/new.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Object must be a Date, DateTime or Time object. :button_create given.):
+    11: 
+    12:   <div class="margin_page">
+    13:     <% form_tag :action => 'create', :id=>@vacancy do -%>
+    14:       <%=create_button %>
+    15:       <%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies', :action=>'edit', :id=>@vacancy)+"'"}) %>
+    16:     <% end %>
+    17:   </div>
+  app/helpers/application_helper.rb:4:in `create_button'
+  app/views/vacancies/new.html.erb:14:in `_app_views_vacancies_new_html_erb___1017422741__621657528'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__621657528'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__621657528'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.4ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 15:36:09 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/new.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (Object must be a Date, DateTime or Time object. :button_create given.):
+    11: 
+    12:   <div class="margin_page">
+    13:     <% form_tag :action => 'create', :id=>@vacancy do -%>
+    14:       <%=create_button %>
+    15:       <%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies', :action=>'edit', :id=>@vacancy)+"'"}) %>
+    16:     <% end %>
+    17:   </div>
+  app/helpers/application_helper.rb:4:in `create_button'
+  app/views/vacancies/new.html.erb:14:in `_app_views_vacancies_new_html_erb___1017422741__621631058'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__621631058'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__621631058'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 15:36:24 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/new.html.erb within layouts/application (59.5ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (undefined method `cancel_button' for #<#<Class:0xb5ce8618>:0xb5ce5a08>):
+    12:   <div class="margin_page">
+    13:     <% form_tag :action => 'create', :id=>@vacancy do -%>
+    14:       <%=create_button %>
+    15:       <%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies', :action=>'edit', :id=>@vacancy)+"'"}) %>
+    16:     <% end %>
+    17:   </div>
+    18:   
+  app/views/vacancies/new.html.erb:15:in `_app_views_vacancies_new_html_erb___1017422741__621631058'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__621631058'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__621631058'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 15:36:57 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Mar 20 15:36:57 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Tue Mar 20 15:36:57 +0400 2012
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Mar 20 15:36:59 +0400 2012
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Mar 20 15:37:01 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Tue Mar 20 15:37:04 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 15:37:06 +0400 2012
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 15:42:51 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+Rendered vacancies/_form.html.erb (0.5ms)
+Rendered vacancies/new.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Mar 20 15:42:51 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Mar 20 15:42:51 +0400 2012
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Tue Mar 20 15:42:51 +0400 2012
+Served asset /main.css - 304 Not Modified (2ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Mar 20 15:42:51 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 15:42:51 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Tue Mar 20 15:42:51 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:03:17 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+Rendered vacancies/_form.html.erb (58.3ms)
+Rendered vacancies/new.html.erb within layouts/application (92.1ms)
+Completed 500 Internal Server Error in 115ms
+
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0xb5e78654>:0xb5e72fc4>):
+    8: 
+    9: <table class="Error" width="100%">
+    10:   <tr>
+    11:     <td><%= error_messages_for 'vacancies' %></td>
+    12:   </tr>
+    13: </table>
+  app/views/vacancies/_form.html.erb:11:in `_app_views_vacancies__form_html_erb___828795635__621914298'
+  app/views/vacancies/new.html.erb:14:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:04:05 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (91.4ms)
+Rendered vacancies/new.html.erb within layouts/application (102.5ms)
+Completed 500 Internal Server Error in 111ms
+
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0xb5c62a90>:0xb5c5ce24>):
+    8: 
+    9: <table class="Error" width="100%">
+    10:   <tr>
+    11:     <td><%= error_messages_for :vacancies %></td>
+    12:   </tr>
+    13: </table>
+  app/views/vacancies/_form.html.erb:11:in `_app_views_vacancies__form_html_erb___828795635__622786408'
+  app/views/vacancies/new.html.erb:14:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:05:23 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (43.6ms)
+Rendered vacancies/new.html.erb within layouts/application (59.2ms)
+Completed 500 Internal Server Error in 72ms
+
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0xb5d6e920>:0xb5d6c634>):
+    7: 
+    8: <table class="Error" width="100%">
+    9:   <tr>
+    10:     <td><%= error_messages_for :vacancy %></td>
+    11:   </tr>
+    12: </table>
+  app/views/vacancies/_form.html.erb:10:in `_app_views_vacancies__form_html_erb___828795635__622192038'
+  app/views/vacancies/new.html.erb:14:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:05:25 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (41.6ms)
+Rendered vacancies/new.html.erb within layouts/application (53.2ms)
+Completed 500 Internal Server Error in 114ms
+
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0xb5ba4dec>:0xb5cddd94>):
+    7: 
+    8: <table class="Error" width="100%">
+    9:   <tr>
+    10:     <td><%= error_messages_for :vacancy %></td>
+    11:   </tr>
+    12: </table>
+  app/views/vacancies/_form.html.erb:10:in `_app_views_vacancies__form_html_erb___828795635__622192038'
+  app/views/vacancies/new.html.erb:14:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__621659238'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:05:47 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (1.4ms)
+Rendered vacancies/new.html.erb within layouts/application (90.5ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0xb5cfa0fc>:0xb5cf5e80>):
+    19:   
+    20: <table class="Error" width="100%">
+    21:   <tr>
+    22:     <td><%= error_messages_for :vacancy %></td>
+    23:   </tr>
+    24: </table>
+    25: <% end %>
+  app/views/vacancies/new.html.erb:22:in `_app_views_vacancies_new_html_erb___1017422741__622353898'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__622353898'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:32:53 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+Rendered vacancies/_form.html.erb (1.1ms)
+Rendered vacancies/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 70ms (Views: 66.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Mar 20 16:32:53 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Tue Mar 20 16:32:53 +0400 2012
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Mar 20 16:32:56 +0400 2012
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Mar 20 16:32:59 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Tue Mar 20 16:33:01 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 16:33:03 +0400 2012
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:36:08 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+Rendered vacancies/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Tue Mar 20 16:36:08 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Mar 20 16:36:08 +0400 2012
+Served asset /main.css - 304 Not Modified (2ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Mar 20 16:36:08 +0400 2012
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Tue Mar 20 16:36:08 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 16:36:08 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /main.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Mar 20 16:36:08 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:36:09 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+Rendered vacancies/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Tue Mar 20 16:36:09 +0400 2012
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Tue Mar 20 16:36:09 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Mar 20 16:36:09 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Mar 20 16:36:09 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /main.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 16:36:09 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Mar 20 16:36:09 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:37:24 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+Rendered vacancies/new.html.erb within layouts/application (71.5ms)
+Completed 500 Internal Server Error in 90ms
+
+ActionView::Template::Error (undefined method `vacancies_path' for #<#<Class:0xb5e0ad0c>:0xb5e076e8>):
+    10: <% content_for :page_content do %>
+    11: 
+    12:   <div class="margin_page">
+    13:     <%= form_for @vacancy do %>
+    14:     	<%=render :partial=>'form'%>	
+    15:       	<%=create_button %>
+    16:       	<%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies', :action=>'edit', :id=>@vacancy)+"'"}) %>
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__621848908'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__621848908'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.4ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:38:07 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Mar 20 16:38:07 +0400 2012
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Tue Mar 20 16:38:07 +0400 2012
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Mar 20 16:38:07 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Mar 20 16:38:07 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Tue Mar 20 16:38:07 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 16:38:07 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:38:26 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (59.2ms)
+Rendered vacancies/new.html.erb within layouts/application (76.8ms)
+Completed 500 Internal Server Error in 89ms
+
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0xb5cf7064>:0xb5cf29b0>):
+    7: 
+    8: <table class="Error" width="100%">
+    9:   <tr>
+    10:     <td><%= error_messages_for :vacancy %></td>
+    11:   </tr>
+    12: </table>
+  app/views/vacancies/_form.html.erb:10:in `_app_views_vacancies__form_html_erb___828795635__622457768'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__622360438'
+  app/views/vacancies/new.html.erb:13:in `_app_views_vacancies_new_html_erb___1017422741__622360438'
+  app/views/vacancies/new.html.erb:10:in `_app_views_vacancies_new_html_erb___1017422741__622360438'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Tue Mar 20 16:38:37 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (1.2ms)
+Rendered vacancies/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Mar 20 16:38:38 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at Tue Mar 20 16:38:38 +0400 2012
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Mar 20 16:38:38 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Mar 20 16:38:38 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Tue Mar 20 16:38:38 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Mar 20 16:38:38 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /main.js - 304 Not Modified (4ms)
