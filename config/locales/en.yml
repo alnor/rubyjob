@@ -2,4 +2,35 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  
+  main_menu_main: Main
+  main_vacancies: Vacancies
+  main_worker: Workers
+  
+  label_vacancies_list: Vacancies
+  label_name: Name
+  label_lifetime: Lifetime
+  label_salary: Salary
+  label_contacts: Contacts
+  label_new_vacancy: New vacancy
+  label_vacancies: Vacancies
+  
+  label_worker_list: Worker
+  label_worker_new: Worker
+  label_worker: Worker
+  label_new_worker: New worker
+  label_skill: Skill
+  label_status: Status
+  label_worker_edit: Worker edit
+  
+  field_name: Name
+  field_salary: Salary
+  field_contacts: Contacts
+  field_lifetime: Life time
+  
+  button_create: Create
+  button_cancel: Cancel
+  button_update: Update
+  button_delete: Delete
+  
+  label_no_items: No items

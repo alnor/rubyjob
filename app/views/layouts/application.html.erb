@@ -10,10 +10,21 @@
 
 <div class="page">
 	<div class ="MainMenu" >
+		<ul id="main-tr"> 
+		  <li><%= link_to t(:main_menu_main),{:controller => 'main',:action=>'index'},{:id=>"main" }%></li>
+		  <li><%= link_to t(:main_vacancies),{:controller => 'vacancies',:action=>'index'},{:id=>"vacancies" }%></li>
+		  <li><%= link_to t(:main_worker),{:controller => 'workers',:action=>'index'},{:id=>"worker" }%></li>
+		</ul>
 	</div>
 	
-	<h2><%= yield :page_header%></h2>
-	<%= yield :page_content%>
+  <div id="flash_messages">
+    <%= render :partial => 'layouts/flash' %>
+  </div>	
+	
+	<div class="container">
+		<h2><%= yield :page_header%></h2>
+		<%= yield :page_content%>
+	</div>
 </div>
 </body>
 </html>

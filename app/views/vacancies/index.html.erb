@@ -11,7 +11,7 @@
 <% content_for :page_content do -%>
 
   <div class="margin_page">
-  	<table cellpadding="0" width="100%" class="tbl">
+  	<table cellpadding="0" cellspacing="0" width="100%" class="tbl">
   		<tr>
   			<th><%=t(:label_name)%></th>	
   			<th><%=t(:label_lifetime)%></th>
@@ -33,6 +33,8 @@
 	  		</tr>			 
 	    <% end %>
     </table>
+    <br />
+  	<%=link_to t(:label_new_vacancy), {:controller=>'vacancies', :action=>'new'}%>    
   </div>
   
 <% end %>

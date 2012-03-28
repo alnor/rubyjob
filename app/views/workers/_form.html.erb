@@ -7,7 +7,7 @@
     <td align="right"><%=t(:field_salary)%>:</td><td><%= text_field 'vacancy', 'salary'  %></td>
   </tr>
   <tr>
-    <td align="right"><%=t(:field_lifetime)%>:</td><td><%=date_select 'vacancy', 'lifetime', :default => 1.month.from_now  %></td>
+    <td align="right"><%=t(:field_skill)%>:</td><td><%=select_tag "vacancy", options_from_collection_for_select(@skill, "id", "name")  %></td>
   </tr>  
   <tr>
     <td align="right"><%=t(:field_contacts)%>:</td><td><%= text_field 'vacancy', 'contacts'  %></td>
@@ -15,9 +15,9 @@
 </table>
 
 
-<% if @vacancy.errors.any? %>
+<% if @worker.errors.any? %>
   <ul class="errors">
-    <% @vacancy.errors.full_messages.each do |msg| %>
+    <% @worker.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
   </ul>

@@ -22,10 +22,14 @@ class VacanciesController < ApplicationController
   end
   
   def create
-    @vacancy.attributes=params[:vacancy]
+    @vacancy.lifetime = date_convert_from_post(params[:vacancy], :lifetime)
+    @vacancy.name=params[:vacancy][:name]
+    @vacancy.salary=params[:vacancy][:salary]
+    @vacancy.contacts=params[:vacancy][:contacts]
+    
     respond_to do |format|
       if @vacancy.save
-        flash[:notice] = l(:notice_successful_create)
+        flash[:notice] = t(:notice_successful_create)
         format.html { redirect_to :action => "edit", :id => @vacancy}
         format.xml  { render      :xml    => @vacancy, :status => :created, :location => @vacancy }
       else
@@ -37,8 +41,9 @@ class VacanciesController < ApplicationController
   
   def update
     respond_to do |format|
-      if  @vacancy.update_attributes(params[:vacancy])
-        flash[:notice] = l(:notice_successful_update)
+
+      if  @vacancy.update_attributes(:lifetime=>date_convert_from_post(params[:vacancy], :lifetime), :name => params[:vacancy][:name], :salary => params[:vacancy][:salary], :contacts=>params[:vacancy][:contacts])
+        flash[:notice] = t(:notice_successful_update)
         format.html { redirect_to :controller => 'vacancies', :action => "edit",:id => @vacancy }
         format.xml  { head :ok }
       else

@@ -1,0 +1,23 @@
+<% content_for :application_title do %>
+	<title><%=t(:label_worker)%></title>
+<% end %>
+
+<% render :partial => 'layouts/menu/workers' %>
+
+<% content_for :page_header do %>
+  <%=t(:label_warker_new)%>:
+<%end %>
+
+<% content_for :page_content do %>
+
+  <div class="margin_page">
+    <%= form_tag :action => 'create', :id=>@worker do -%>
+    	<%=render :partial=>'form'%>	
+      	<%=create_button %>
+      	<%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'workers', :action=>'index')+"'"}) %>
+    <% end %>
+  </div>
+  
+<% end %>
+
+

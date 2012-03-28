@@ -13,7 +13,7 @@
     <%= form_tag :action => 'create', :id=>@vacancy do -%>
     	<%=render :partial=>'form'%>	
       	<%=create_button %>
-      	<%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies', :action=>'edit', :id=>@vacancy)+"'"}) %>
+      	<%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies', :action=>'index')+"'"}) %>
     <% end %>
   </div>
   

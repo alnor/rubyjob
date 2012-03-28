@@ -11,11 +11,22 @@ class WorkersController < ApplicationController
     end     
   end
   
-  def create
+  def new
+    @skill=Skill.all
+  end
+  
+  def edit
+    respond_to do |format|
+      format.html
+      format.xml  { render :xml => @worker}
+    end    
+  end  
+  
+  def create  
     @worker.attributes=params[:worker]
     respond_to do |format|
       if @worker.save
-        flash[:notice] = l(:notice_successful_create)
+        flash[:notice] = t(:notice_successful_create)
         format.html { redirect_to :action => "edit", :id => @worker}
         format.xml  { render      :xml    => @worker, :status => :created, :location => @worker }
       else
@@ -28,7 +39,7 @@ class WorkersController < ApplicationController
   def update
     respond_to do |format|
       if  @worker.update_attributes(params[:worker])
-        flash[:notice] = l(:notice_successful_update)
+        flash[:notice] = t(:notice_successful_update)
         format.html { redirect_to :controller => 'worker', :action => "edit",:id => @vacancy }
         format.xml  { head :ok }
       else

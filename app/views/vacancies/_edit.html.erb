@@ -1,0 +1,10 @@
+<div class="margin_page">
+  <%= form_tag :controller=>'vacancies',:action => 'update', :id=>@vacancy do %>
+    <%= render :partial => 'vacancies/form' %>
+    <%=update_button%>
+    <%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies',:action=>'index')+"'"})%>
+    <%=delete_button({ :controller=>'vacancies',:action => 'destroy', :id => @vacancy }, :confirm => "Delete?}", :method => :post)%>
+  <% end %>
+</div>    
+
+
