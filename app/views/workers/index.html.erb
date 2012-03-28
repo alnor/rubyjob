@@ -16,7 +16,6 @@
   			<th><%=t(:label_name)%></th>	
   			<th><%=t(:label_salary)%></th>
   			<th><%=t(:label_contacts)%></th>
-  			<th><%=t(:label_skill)%></th>
   			<th><%=t(:label_status)%></th>
   		</tr>		
 	  	<% if @worker.size>0 %>
@@ -25,7 +24,6 @@
 		  			<td><%=link_to worker.name, {:controller=>'workers', :action=>'edit', :id=>worker.id}%></td>	
 		  			<td><%=worker.salary%></td>
 		  			<td><%=worker.contacts%></td>
-		  			<td><%=worker.skill.name%></td>
 		  			<td><%=worker.status_id%></td>		  					  					  			
 		  		</tr>		    
 		    <% end %>

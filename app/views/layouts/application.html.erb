@@ -8,10 +8,14 @@
   
   <script>
   $(document).ready(function(){
-	$('#skill_link').live('click', function(event){
+	$('#v_skill_link').live('click', function(event){
 	    event.preventDefault();
 	    $.post($(this).attr('data-href') + "?skill=" + $('#vacancy_skills').val(), function(data){} );
-	});  	
+	});  
+	$('#w_skill_link').live('click', function(event){
+	    event.preventDefault();
+	    $.post($(this).attr('data-href') + "?skill=" + $('#worker_skills').val(), function(data){} );
+	});		
   })	
   </script>
   

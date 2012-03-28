@@ -1,18 +1,18 @@
 
 <table class="form" width="100%">
   <tr>
-    <td align="right"><%=t(:field_name)%>:</td><td><%= text_field 'vacancy', 'name'  %></td>
+    <td align="right"><%=t(:field_name)%>:</td><td><%= text_field 'worker', 'name'  %></td>
   </tr>
   <tr>
-    <td align="right"><%=t(:field_salary)%>:</td><td><%= text_field 'vacancy', 'salary'  %></td>
+    <td align="right"><%=t(:field_salary)%>:</td><td><%= text_field 'worker', 'salary'  %></td>
   </tr> 
   <tr>
-    <td align="right"><%=t(:field_contacts)%>:</td><td><%= text_field 'vacancy', 'contacts'  %></td>
+    <td align="right"><%=t(:field_contacts)%>:</td><td><%= text_field 'worker', 'contacts'  %></td>
   </tr>    
   <% unless @worker.id.nil? %>
   <tr>
     <td align="right"><%=t(:field_skill)%>:</td>
-    <td><%= text_field 'worker', 'skills', :value=>""  %><%=link_to t(:label_add_skill), '#', :"data-href" =>"/workers/add_skill/#{@worker.id}", :id=>'skill_link', :remote=>true %>  </td>
+    <td><%= text_field 'worker', 'skills', :value=>""  %><%=link_to t(:label_add_skill), '#', :"data-href" =>"/workers/add_skill/#{@worker.id}", :id=>'w_skill_link', :remote=>true %>  </td>
   </tr> 
   <tr>
     <td colspan="2">

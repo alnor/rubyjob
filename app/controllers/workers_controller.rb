@@ -38,12 +38,13 @@ class WorkersController < ApplicationController
   
   def update
     respond_to do |format|
+      params[:worker].delete(:skills)
       if  @worker.update_attributes(params[:worker])
         flash[:notice] = t(:notice_successful_update)
-        format.html { redirect_to :controller => 'worker', :action => "edit",:id => @vacancy }
+        format.html { redirect_to :controller => 'workers', :action => "edit",:id => @worker }
         format.xml  { head :ok }
       else
-        format.html { render  :controller=>'worker', :action=>"edit", :id => @worker}
+        format.html { render  :controller=>'workers', :action=>"edit", :id => @worker}
         format.xml  { render :xml => @worker.errors }
       end
     end
