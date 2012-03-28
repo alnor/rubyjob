@@ -4471,3 +4471,174 @@ Started GET "/assets/main.js?body=1" for 127.0.0.1 at Wed Mar 28 13:50:17 +0400 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Mar 28 13:50:17 +0400 2012
 Served asset /main.js - 304 Not Modified (0ms)
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/vacancies/edit/980190965" for 127.0.0.1 at Wed Mar 28 14:58:54 +0400 2012
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"980190965"}
+  [1m[36mVacancy Load (1.7ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "980190965"]]
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+Rendered vacancies/_form.html.erb (9.1ms)
+Rendered vacancies/_edit.html.erb (22.0ms)
+Rendered vacancies/edit.html.erb within layouts/application (41.8ms)
+Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 88ms (Views: 78.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Mar 28 14:58:54 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Mar 28 14:58:56 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Mar 28 14:58:57 +0400 2012
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Wed Mar 28 14:58:59 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Mar 28 14:59:01 +0400 2012
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started POST "/vacancies/destroy/980190965" for 127.0.0.1 at Wed Mar 28 14:59:11 +0400 2012
+
+AbstractController::ActionNotFound (The action 'destroy' could not be found for VacanciesController):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (2.7ms)
+
+
+Started GET "/vacancies" for 127.0.0.1 at Wed Mar 28 14:59:18 +0400 2012
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (0.8ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+Rendered vacancies/index.html.erb within layouts/application (80.9ms)
+Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 104ms (Views: 97.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Mar 28 14:59:18 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Mar 28 14:59:18 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Mar 28 14:59:18 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Wed Mar 28 14:59:18 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Mar 28 14:59:18 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/vacancies" for 127.0.0.1 at Wed Mar 28 14:59:22 +0400 2012
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (1.1ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.5ms)
+Rendered vacancies/index.html.erb within layouts/application (29.6ms)
+Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 62.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Mar 28 14:59:22 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Mar 28 14:59:22 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Wed Mar 28 14:59:22 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Mar 28 14:59:22 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Mar 28 14:59:22 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/vacancies/edit/980190965" for 127.0.0.1 at Wed Mar 28 15:02:11 +0400 2012
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"980190965"}
+  [1m[36mVacancy Load (1.5ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "980190965"]]
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+Rendered vacancies/_form.html.erb (7.6ms)
+Rendered vacancies/_edit.html.erb (18.4ms)
+Rendered vacancies/edit.html.erb within layouts/application (35.5ms)
+Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 73ms (Views: 60.1ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Mar 28 15:02:12 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Mar 28 15:02:12 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Mar 28 15:02:12 +0400 2012
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Wed Mar 28 15:02:12 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /main.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Mar 28 15:02:12 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/vacancies/destroy/980190965" for 127.0.0.1 at Wed Mar 28 15:02:15 +0400 2012
+  Processing by VacanciesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LiHrd4bS0r9QNLOiYWqYXcc7ud9n0L29Y1cLhnNkG40=", "id"=>"980190965"}
+  [1m[35mVacancy Load (0.4ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "980190965"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSkill Load (13.7ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 980190965
+  [1m[36mSQL (1.2ms)[0m  [1mDELETE FROM "vacancies" WHERE "vacancies"."id" = $1[0m  [["id", 980190965]]
+  [1m[35m (15.1ms)[0m  COMMIT
+Redirected to http://rubyjob.web/vacancies
+Completed 302 Found in 101ms
+
+
+Started GET "/vacancies" for 127.0.0.1 at Wed Mar 28 15:02:15 +0400 2012
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (0.6ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/index.html.erb within layouts/application (11.1ms)
+Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 30ms (Views: 23.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Mar 28 15:02:15 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Mar 28 15:02:15 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Mar 28 15:02:15 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Mar 28 15:02:15 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Wed Mar 28 15:02:18 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)

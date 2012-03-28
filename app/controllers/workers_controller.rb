@@ -49,6 +49,14 @@ class WorkersController < ApplicationController
     end
   end   
   
+  def destroy
+    flash[:notice] = t(:notice_successful_delete) if @worker.destroy
+    respond_to do |format|
+      format.html { redirect_to :controller=>'worker',:action => "index"}
+      format.xml  { render :xml=>"ok"}
+    end
+  end   
+  
   private
   
   def create_worker

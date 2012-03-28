@@ -53,6 +53,14 @@ class VacanciesController < ApplicationController
     end
   end  
   
+  def destroy
+    flash[:notice] = t(:notice_successful_delete) if @vacancy.destroy
+    respond_to do |format|
+      format.html { redirect_to :controller=>'vacancies',:action => "index"}
+      format.xml  { render :xml=>"ok"}
+    end
+  end    
+  
   private
   
   def create_vacancy
