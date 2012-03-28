@@ -5,6 +5,16 @@
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  
+  <script>
+  $(document).ready(function(){
+	$('#skill_link').live('click', function(event){
+	    event.preventDefault();
+	    $.post($(this).attr('data-href') + "?skill=" + $('#vacancy_skills').val(), function(data){} );
+	});  	
+  })	
+  </script>
+  
 </head>
 <body>
 

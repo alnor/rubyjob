@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120328091814) do
+ActiveRecord::Schema.define(:version => 20120328112827) do
 
   create_table "skills", :force => true do |t|
     t.datetime "created_at"
@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(:version => 20120328091814) do
     t.integer  "lifetime"
     t.integer  "salary"
     t.string   "contacts"
-    t.integer  "skill_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

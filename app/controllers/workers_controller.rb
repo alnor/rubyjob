@@ -1,7 +1,7 @@
 class WorkersController < ApplicationController
   
   before_filter :create_worker,  :only => [:new,:create]
-  before_filter :find_worker,    :only => [:show,:edit,:update,:destroy]
+  before_filter :find_worker,    :only => [:show,:edit,:update,:destroy,:add_skill]
     
   def index
     @worker = Worker.all
@@ -56,6 +56,19 @@ class WorkersController < ApplicationController
       format.xml  { render :xml=>"ok"}
     end
   end   
+  
+  def add_skill
+    
+    @skill = Skill.new
+    @skill.name=params[:skill]
+    
+    if @worker.skills << @skill
+      respond_to do |format|
+          format.js {}
+      end    
+    end
+   
+  end  
   
   private
   

@@ -1,3 +1,6 @@
 class Worker < ActiveRecord::Base
-  has_and_belongs_to_many :skill
+  has_many :skills_vacancies
+  has_many :skills, :through => :skills_vacancies
+  
+  validate :name, :presence => true 
 end

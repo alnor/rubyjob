@@ -11,10 +11,27 @@
   </tr>  
   <tr>
     <td align="right"><%=t(:field_contacts)%>:</td><td><%= text_field 'vacancy', 'contacts'  %></td>
-  </tr>    
+  </tr>  
+  <% unless @vacancy.id.nil? %>
+  <tr>
+    <td align="right"><%=t(:field_skill)%>:</td>
+    <td><%= text_field 'vacancy', 'skills', :value=>""  %><%=link_to t(:label_add_skill), '#', :"data-href" =>"/vacancies/add_skill/#{@vacancy.id}", :id=>'skill_link', :remote=>true %>  </td>
+  </tr> 
+  <tr>
+    <td colspan="2">
+    	<div id="skills">
+	    		<% if @vacancy.skills.size>0 %>
+				    <% @vacancy.skills.each do |skill|%>
+				  		<%=skill.name%><br />    
+				    <% end %>    			
+	    		<% end %>
+    	</div>	
+    </td>
+  </tr> 
+  <% end %>      
 </table>
 
-
+<!--:query => "ruby on rails"-->
 <% if @vacancy.errors.any? %>
   <ul class="errors">
     <% @vacancy.errors.full_messages.each do |msg| %>

@@ -5,13 +5,27 @@
   </tr>
   <tr>
     <td align="right"><%=t(:field_salary)%>:</td><td><%= text_field 'vacancy', 'salary'  %></td>
-  </tr>
-  <tr>
-    <td align="right"><%=t(:field_skill)%>:</td><td><%=select_tag "vacancy", options_from_collection_for_select(@skill, "id", "name")  %></td>
-  </tr>  
+  </tr> 
   <tr>
     <td align="right"><%=t(:field_contacts)%>:</td><td><%= text_field 'vacancy', 'contacts'  %></td>
   </tr>    
+  <% unless @worker.id.nil? %>
+  <tr>
+    <td align="right"><%=t(:field_skill)%>:</td>
+    <td><%= text_field 'worker', 'skills', :value=>""  %><%=link_to t(:label_add_skill), '#', :"data-href" =>"/workers/add_skill/#{@worker.id}", :id=>'skill_link', :remote=>true %>  </td>
+  </tr> 
+  <tr>
+    <td colspan="2">
+    	<div id="skills">
+	    		<% if @worker.skills.size>0 %>
+				    <% @worker.skills.each do |skill|%>
+				  		<%=skill.name%><br />    
+				    <% end %>    			
+	    		<% end %>
+    	</div>	
+    </td>
+  </tr> 
+  <% end %>   
 </table>
 
 

@@ -1,7 +1,7 @@
 class VacanciesController < ApplicationController
   
   before_filter :create_vacancy,  :only => [:new,:create]
-  before_filter :find_vacancy,    :only => [:show,:edit,:update,:destroy]
+  before_filter :find_vacancy,    :only => [:show,:edit,:update,:destroy,:add_skill]
   
   def index
     @vacancy=Vacancy.all
@@ -12,6 +12,7 @@ class VacanciesController < ApplicationController
   end
   
   def new
+    #@skill=Skill.all
   end  
   
   def edit
@@ -26,7 +27,7 @@ class VacanciesController < ApplicationController
     @vacancy.name=params[:vacancy][:name]
     @vacancy.salary=params[:vacancy][:salary]
     @vacancy.contacts=params[:vacancy][:contacts]
-    
+
     respond_to do |format|
       if @vacancy.save
         flash[:notice] = t(:notice_successful_create)
@@ -41,7 +42,6 @@ class VacanciesController < ApplicationController
   
   def update
     respond_to do |format|
-
       if  @vacancy.update_attributes(:lifetime=>date_convert_from_post(params[:vacancy], :lifetime), :name => params[:vacancy][:name], :salary => params[:vacancy][:salary], :contacts=>params[:vacancy][:contacts])
         flash[:notice] = t(:notice_successful_update)
         format.html { redirect_to :controller => 'vacancies', :action => "edit",:id => @vacancy }
@@ -60,6 +60,19 @@ class VacanciesController < ApplicationController
       format.xml  { render :xml=>"ok"}
     end
   end    
+  
+  def add_skill
+    
+    @skill = Skill.new
+    @skill.name=params[:skill]
+    
+    if @vacancy.skills << @skill
+      respond_to do |format|
+          format.js {}
+      end    
+    end
+   
+  end
   
   private
   
