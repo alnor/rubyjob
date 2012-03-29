@@ -1,7 +1,7 @@
 class WorkersController < ApplicationController
   
   before_filter :create_worker,  :only => [:new,:create]
-  before_filter :find_worker,    :only => [:show,:edit,:update,:destroy,:add_skill]
+  before_filter :find_worker,    :only => [:show,:edit,:update,:destroy,:add_skill, :find]
     
   def index
     @worker = Worker.all
@@ -12,7 +12,6 @@ class WorkersController < ApplicationController
   end
   
   def new
-    @skill=Skill.all
   end
   
   def edit
@@ -39,6 +38,7 @@ class WorkersController < ApplicationController
   def update
     respond_to do |format|
       params[:worker].delete(:skills)
+      #params[:worker].delete(:skill_sell)
       if  @worker.update_attributes(params[:worker])
         flash[:notice] = t(:notice_successful_update)
         format.html { redirect_to :controller => 'workers', :action => "edit",:id => @worker }
@@ -58,16 +58,30 @@ class WorkersController < ApplicationController
     end
   end   
   
+  def find
+    @vacancy=@worker.skills.joins(:skills_vacancies=>:vacancy).collect do |v|
+      v.vacancies
+    end
+    respond_to do |format|
+        format.js {}
+    end    
+  end
+    
+  
   def add_skill
     
-    @skill = Skill.new
-    @skill.name=params[:skill]
-    
-    if @worker.skills << @skill
-      respond_to do |format|
-          format.js {}
-      end    
+    unless params[:selected_skill].empty?
+      @worker.skills << Skill.find(params[:selected_skill])
     end
+    
+    unless params[:skill].empty?
+      @skill = Skill.new({:name=>params[:skill]})
+      @worker.skills << @skill
+    end     
+    
+    respond_to do |format|
+        format.js {}
+    end 
    
   end  
   

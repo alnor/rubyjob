@@ -10,13 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120328151105) do
+ActiveRecord::Schema.define(:version => 20120329082239) do
 
   create_table "skills", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
   end
+
+  add_index "skills", ["name"], :name => "index_skills_on_name", :unique => true
 
   create_table "skills_vacancies", :id => false, :force => true do |t|
     t.integer "vacancy_id"
@@ -36,21 +38,21 @@ ActiveRecord::Schema.define(:version => 20120328151105) do
 
   create_table "vacancies", :force => true do |t|
     t.text     "name"
-    t.integer  "lifetime"
     t.integer  "salary"
     t.string   "contacts"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "lifetime"
   end
 
   create_table "workers", :force => true do |t|
     t.text     "name"
     t.integer  "salary"
     t.string   "contacts"
-    t.integer  "status_id"
     t.integer  "skill_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "status"
   end
 
 end

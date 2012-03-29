@@ -1,7 +1,7 @@
 class VacanciesController < ApplicationController
   
   before_filter :create_vacancy,  :only => [:new,:create]
-  before_filter :find_vacancy,    :only => [:show,:edit,:update,:destroy,:add_skill]
+  before_filter :find_vacancy,    :only => [:show,:edit,:update,:destroy,:add_skill, :find]
   
   def index
     @vacancy=Vacancy.all
@@ -12,7 +12,7 @@ class VacanciesController < ApplicationController
   end
   
   def new
-    #@skill=Skill.all
+    #@sk=Skill.joins(:skills_vacancies=>:vacancy, :skills_workers=>:worker).where(:id=>980190968)
   end  
   
   def edit
@@ -61,16 +61,30 @@ class VacanciesController < ApplicationController
     end
   end    
   
+  def find
+    @workers=@vacancy.skills.joins(:skills_workers=>:worker).collect do |v|
+      v.workers
+    end
+    
+    respond_to do |format|
+        format.js {}
+    end    
+  end
+  
   def add_skill
     
-    @skill = Skill.new
-    @skill.name=params[:skill]
-    
-    if @vacancy.skills << @skill
-      respond_to do |format|
-          format.js {}
-      end    
+    unless params[:selected_skill].empty?
+      @vacancy.skills << Skill.find(params[:selected_skill])
     end
+    
+    unless params[:skill].empty?
+      @skill = Skill.new({:name=>params[:skill]})
+      @vacancy.skills << @skill
+    end   
+    
+    respond_to do |format|
+        format.js {}
+    end    
    
   end
   

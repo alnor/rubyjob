@@ -1,13 +1,14 @@
 body{
 	font-size:12px;
 	font-family:Arial;
-	width:100%;
+	
 	position:relative;
 }
 .page{
-	width:1004px;
-	margin:auto;
-	padding:auto;
+	width:1000px;
+	margin:0 auto 0 auto;
+	padding:0 auto 0 auto;
+	overflow:hidden;
 }
 
 a:link, a:visited{
@@ -28,4 +29,47 @@ a:link, a:visited{
 .tbl th{
 	background-color: gray;
 	color:white;
+}
+.margin_page{
+	overflow:hidden;
+	border:1px solid silver;
+	border-radius: 5px;
+	padding:10px;
+}
+#skills{
+	overflow:hidden;
+	border:1px solid silver;
+	border-radius: 5px;
+	padding:10px;	
+}
+.MainMenu{
+	width:100%;
+	border:1px solid silver;
+	border-radius: 5px;
+	height:20px;
+	background-color: gray;	
+}
+ul#main-tr{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+ul#main-tr li {
+	line-height:20px;
+	padding:0 20px 0 20px;
+	float:left;
+}
+ul#main-tr li a{
+	color:white;
+	text-decoration:none;
+}
+.notice{
+	border:1px solid silver;
+	border-radius: 5px;
+	height:30px;
+	background-color: silver;
+	color: black;
+	line-height: 30px;	
+	margin-top:10px;
+	padding:10px;
 }

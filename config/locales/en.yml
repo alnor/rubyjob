@@ -8,6 +8,7 @@ en:
   main_worker: Workers
   
   label_vacancies_list: Vacancies
+  label_vacancies_edit: Vacancies edit
   label_name: Name
   label_lifetime: Lifetime
   label_salary: Salary
@@ -19,9 +20,11 @@ en:
   label_worker_new: Worker
   label_worker: Worker
   label_new_worker: New worker
+  label_worker_new: New worker
   label_skill: Skill
   label_status: Status
   label_worker_edit: Worker edit
+  label_delete_skill: Delete skill
   
   field_name: Name
   field_salary: Salary
@@ -34,3 +37,8 @@ en:
   button_delete: Delete
   
   label_no_items: No items
+  label_add_skill: Add
+  
+  notice_successful_update: Successful update
+  notice_successful_delete: Successful delete
+  notice_successful_create: Successful create

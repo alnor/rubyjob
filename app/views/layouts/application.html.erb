@@ -10,12 +10,12 @@
   $(document).ready(function(){
 	$('#v_skill_link').live('click', function(event){
 	    event.preventDefault();
-	    $.post($(this).attr('data-href') + "?skill=" + $('#vacancy_skills').val(), function(data){} );
+	    $.post($(this).attr('data-href') + "?skill=" + $('#vacancy_skills').val()+"&selected_skill=" + $('#vacancy_select_skill').val(), function(data){} );
 	});  
 	$('#w_skill_link').live('click', function(event){
 	    event.preventDefault();
-	    $.post($(this).attr('data-href') + "?skill=" + $('#worker_skills').val(), function(data){} );
-	});		
+	    $.post($(this).attr('data-href') + "?skill=" + $('#worker_skills').val()+"&selected_skill=" + $('#worker_select_skill').val(), function(data){} );
+	});				
   })	
   </script>
   
@@ -23,6 +23,11 @@
 <body>
 
 <div class="page">
+	
+	<div class="header">
+		<h1>Job-for-Job</h1>
+	</div>	
+	
 	<div class ="MainMenu" >
 		<ul id="main-tr"> 
 		  <li><%= link_to t(:main_menu_main),{:controller => 'main',:action=>'index'},{:id=>"main" }%></li>

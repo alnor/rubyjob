@@ -24,12 +24,12 @@
 		  			<td><%=link_to worker.name, {:controller=>'workers', :action=>'edit', :id=>worker.id}%></td>	
 		  			<td><%=worker.salary%></td>
 		  			<td><%=worker.contacts%></td>
-		  			<td><%=worker.status_id%></td>		  					  					  			
+		  			<td><%=worker.status%></td>		  					  					  			
 		  		</tr>		    
 		    <% end %>
 		<% else %>   
 	  		<tr>
-	  			<td><%=t(:label_no_items)%></td>	
+	  			<td colspan=4><%=t(:label_no_items)%></td>	
 	  		</tr>			 
 	    <% end %>
     </table>

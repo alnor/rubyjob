@@ -1,0 +1,22 @@
+<table cellpadding="0" cellspacing="0" width="100%" class="tbl">
+	<tr>
+		<th><%=t(:label_name)%></th>	
+		<th><%=t(:label_lifetime)%></th>
+		<th><%=t(:label_salary)%></th>
+		<th><%=t(:label_contacts)%></th>
+	</tr>		
+  	<% if @vacancy.size>0 %>
+	    <% @vacancy.flatten.uniq.each do |v|%>
+	  		<tr>
+	  			<td><%=link_to v.name, {:controller=>'vacancies', :action=>'edit', :id=>v.id}%></td>	
+	  			<td><%=v.lifetime%></td>
+	  			<td><%=v.salary%></td>
+	  			<td><%=v.contacts%></td>	  					  					  			
+	  		</tr>			    
+	    <% end %>
+	<% else %>   
+  		<tr>
+  			<td colspan=4><%=t(:label_no_items)%></td>	
+  		</tr>			 
+    <% end %>
+</table>

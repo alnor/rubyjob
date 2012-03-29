@@ -3,8 +3,12 @@
     <%= render :partial => 'vacancies/form' %>
     <%=update_button%>
     <%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'vacancies',:action=>'index')+"'"})%>
-    <%=delete_button({ :controller=>'vacancies',:action => 'destroy', :id => @vacancy }, :confirm => "Delete?}", :method => :post)%>
+    <%=delete_button({ :controller=>'vacancies',:action => 'destroy', :id => @vacancy }, :confirm => "Delete?", :method => :post)%>
   <% end %>
 </div>    
 
+<h4><%=link_to t('Find the suitable employees'), {:controller=>"vacancies", :action=>"find", :id=>@vacancy}, :id=>'find_link', :remote=>true %></h4>
+
+<div id="search_block">
+</div>
 

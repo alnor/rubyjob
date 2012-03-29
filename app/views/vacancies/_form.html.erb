@@ -13,21 +13,27 @@
     <td align="right"><%=t(:field_contacts)%>:</td><td><%= text_field 'vacancy', 'contacts'  %></td>
   </tr>  
   <% unless @vacancy.id.nil? %>
-  <tr>
-    <td align="right"><%=t(:field_skill)%>:</td>
-    <td><%= text_field 'vacancy', 'skills', :value=>""  %><%=link_to t(:label_add_skill), '#', :"data-href" =>"/vacancies/add_skill/#{@vacancy.id}", :id=>'v_skill_link', :remote=>true %>  </td>
-  </tr> 
-  <tr>
-    <td colspan="2">
-    	<div id="skills">
-	    		<% if @vacancy.skills.size>0 %>
-				    <% @vacancy.skills.each do |skill|%>
-				  		<%=skill.name%><br />    
-				    <% end %>    			
-	    		<% end %>
-    	</div>	
-    </td>
-  </tr> 
+	  <tr>
+	    <td align="right"><%=t(:field_skill)%>:</td>
+	    <td><%= text_field 'vacancy', 'skills', :value=>""  %> </td>
+	  </tr>	  
+	  <tr>
+	    <td align="right"></td>
+	    <td><%= select_tag 'vacancy', options_from_collection_for_select(Skill.all, "id", "name"), :name=>'worker[skill_sel]', :id=>'vacancy_select_skill', :include_blank => true  %>&nbsp;&nbsp;<%=link_to t(:label_add_skill), '#', :"data-href" =>"/vacancies/add_skill/#{@vacancy.id}", :id=>'v_skill_link', :remote=>true %>  </td>
+	  </tr>	  
+	  <tr>
+	    <td colspan="2">
+	    	<div id="skills">
+		    		<% if @vacancy.skills.size>0 %>
+					    <ul style="width:200px;">
+					    <% @vacancy.skills.each do |skill|%>
+					  		<li><%=skill.name%><span style="display:block;float:right;"><%=link_to t(:label_delete_skill), {:controller=>'skills', :action=>'destroy', :id=>skill.id}%></span></li>  
+					    <% end %>
+					    </ul>    			
+		    		<% end %>
+	    	</div>	
+	    </td>
+	  </tr> 
   <% end %>      
 </table>
 

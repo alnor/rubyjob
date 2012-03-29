@@ -9,18 +9,28 @@
   <tr>
     <td align="right"><%=t(:field_contacts)%>:</td><td><%= text_field 'worker', 'contacts'  %></td>
   </tr>    
+  <tr>
+    <td align="right"><%=t(:field_status)%>:</td>
+    <td><%= text_field 'worker', 'status'  %> </td>
+  </tr>   
   <% unless @worker.id.nil? %>
   <tr>
     <td align="right"><%=t(:field_skill)%>:</td>
-    <td><%= text_field 'worker', 'skills', :value=>""  %><%=link_to t(:label_add_skill), '#', :"data-href" =>"/workers/add_skill/#{@worker.id}", :id=>'w_skill_link', :remote=>true %>  </td>
-  </tr> 
+    <td><%= text_field 'worker', 'skills', :value=>""  %> </td>
+  </tr>  
+  <tr>
+    <td align="right"></td>
+    <td><%= select_tag 'worker', options_from_collection_for_select(Skill.all, "id", "name"), :name=>'skill_sel', :id=>'worker_select_skill', :include_blank => true  %>&nbsp;&nbsp;<%=link_to t(:label_add_skill), '#', :"data-href" =>"/workers/add_skill/#{@worker.id}", :id=>'w_skill_link', :remote=>true %>  </td>
+  </tr>	  
   <tr>
     <td colspan="2">
     	<div id="skills">
 	    		<% if @worker.skills.size>0 %>
-				    <% @worker.skills.each do |skill|%>
-				  		<%=skill.name%><br />    
-				    <% end %>    			
+					<ul style="width:200px;">
+					<% @worker.skills.each do |skill|%>
+						<li><%=skill.name%> <span style="display:block;float:right;"><%=link_to t(:label_delete_skill), {:controller=>'skills', :action=>'destroy', :id=>skill.id}%></span></li>
+					<%end%>
+					</ul>  			
 	    		<% end %>
     	</div>	
     </td>
