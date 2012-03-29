@@ -60,7 +60,7 @@ class WorkersController < ApplicationController
   
   def find
     @vacancy=@worker.skills.joins(:skills_vacancies=>:vacancy).collect do |v|
-      v.vacancies
+      v.vacancies.active
     end
     respond_to do |format|
         format.js {}

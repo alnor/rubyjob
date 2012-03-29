@@ -8,9 +8,9 @@ class VacancyTest < ActiveSupport::TestCase
     assert !vacancy.save, "Saved the vacancy whithout name"
   end
   
-  test "should not save the vacancy whithout skills" do
+  test "should not save the vacancy if contacts not exists email or phone" do
     vacancy = Vacancy.new
-    assert !vacancy.save, "Saved the vacancy whithout skills"
+    assert !vacancy.save, "Saved the vacancy if contacts not exists email or phone"
   end
   
 end
