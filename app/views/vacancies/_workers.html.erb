@@ -20,3 +20,28 @@
   		</tr>			 
     <% end %>
 </table>
+
+<h4>Sub workers</h4>
+
+<table cellpadding="0" cellspacing="0" width="100%" class="tbl">
+	<tr>
+		<th><%=t(:label_name)%></th>	
+		<th><%=t(:label_salary)%></th>
+		<th><%=t(:label_contacts)%></th>
+		<th><%=t(:label_status)%></th>
+	</tr>		
+  	<% if @sub_workers.flatten.size>0 %>
+	    <% @sub_workers.flatten.uniq.each do |w|%>
+	  		<tr>
+	  			<td><%=link_to w.name, {:controller=>'workers', :action=>'edit', :id=>w.id}%></td>	
+	  			<td><%=w.salary%></td>
+	  			<td><%=w.contacts%></td>
+	  			<td><%=w.status%></td>		  					  					  			
+	  		</tr>		    
+	    <% end %>
+	<% else %>   
+  		<tr>
+  			<td colspan=4><%=t(:label_no_items)%></td>	
+  		</tr>			 
+    <% end %>
+</table>

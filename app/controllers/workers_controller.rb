@@ -62,6 +62,22 @@ class WorkersController < ApplicationController
     @vacancy=@worker.skills.joins(:skills_vacancies=>:vacancy).collect do |v|
       v.vacancies.active
     end
+    
+    @sub_vacancies=@worker.skills.map do |skill|
+      ret=[]
+      (Skill.all-@worker.skills).each do |other_skill|
+        estimate=skill.name.levenshtein(other_skill.name)
+        p estimate, skill.name, other_skill.name
+        if estimate<=10 and estimate>1
+          other_skill.vacancies.each do |e|
+            ret << e
+          end
+        end
+      end 
+
+      ret.flatten.uniq-@vacancy.flatten.uniq
+    end    
+    
     respond_to do |format|
         format.js {}
     end    
