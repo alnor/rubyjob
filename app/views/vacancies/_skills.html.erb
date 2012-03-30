@@ -1,4 +1,4 @@
-<ul style="width:200px;">
+<ul style="width:500px;">
 <% @vacancy.skills.each do |skill|%>
 	<li><%=skill.name%> <span style="display:block;float:right;"><%=link_to t(:label_delete_skill), {:controller=>'skills', :action=>'destroy', :id=>skill.id}%></span></li>
 <%end%>
