@@ -33901,3 +33901,24 @@ Served asset /main.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 14:34:42 +0400 2012
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/vacancies" for 127.0.0.1 at Fri Mar 30 15:17:48 +0400 2012
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (1.5ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+Rendered vacancies/index.html.erb within layouts/application (26.9ms)
+Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 77ms (Views: 69.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:17:49 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:17:49 +0400 2012
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:17:52 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)

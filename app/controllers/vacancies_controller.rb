@@ -68,8 +68,11 @@ class VacanciesController < ApplicationController
     @sub_workers=@vacancy.skills.map do |skill|
       ret=[]
       (Skill.all-@vacancy.skills).each do |other_skill|
+        
         estimate=skill.name.levenshtein(other_skill.name)
-        if estimate<=10 and estimate>1
+        estimate_o=other_skill.name.levenshtein(skill.name)
+        
+        if ((estimate<=10 and estimate>1) || (estimate_o<=10 and estimate_o>1))
           other_skill.workers.each do |e|
             ret << e
           end
