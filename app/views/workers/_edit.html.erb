@@ -3,7 +3,7 @@
     <%= render :partial => 'workers/form' %>
     <%=update_button%>
     <%=cancel_button({:type => 'button', :onClick=>"parent.location='" + url_for(:controller=>'workers',:action=>'index')+"'"})%>
-    <%=delete_button({ :controller=>'workers',:action => 'destroy', :id => @worker }, :confirm => "Delete?}", :method => :post)%>
+    <%=delete_button({ :controller=>'workers',:action => 'destroy', :id => @worker }, :confirm => "Delete?", :method => :post)%>
   <% end %>
 </div>    
 

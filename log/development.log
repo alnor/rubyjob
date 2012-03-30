@@ -33922,3 +33922,803 @@ Served asset /jquery.js - 304 Not Modified (3ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:17:52 +0400 2012
 Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:17:54 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:17:56 +0400 2012
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/vacancies/new" for 127.0.0.1 at Fri Mar 30 15:18:16 +0400 2012
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+Rendered vacancies/_form.html.erb (6.2ms)
+Rendered vacancies/new.html.erb within layouts/application (32.7ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:18:16 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:16 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:16 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:16 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:16 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started POST "/vacancies/create" for 127.0.0.1 at Fri Mar 30 15:18:23 +0400 2012
+  Processing by VacanciesController#create as HTML
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3U97/pacgWUSkTF9l56vfcNT9qNGZNfcYkVGvWveMTs=", "utf8"=>"✓", "vacancy"=>{"lifetime(1i)"=>"2012", "name"=>"vacancy #1", "lifetime(2i)"=>"4", "lifetime(3i)"=>"30", "salary"=>"1000", "contacts"=>"alex-dir@mail.ru"}}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["contacts", "alex-dir@mail.ru"], ["created_at", Fri, 30 Mar 2012 11:18:23 UTC +00:00], ["lifetime", Mon, 30 Apr 2012], ["name", "vacancy #1"], ["salary", 1000], ["updated_at", Fri, 30 Mar 2012 11:18:23 UTC +00:00]]
+  [1m[36m (22.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://rubyjob.web/vacancies/edit/980190963
+Completed 302 Found in 40ms
+
+
+Started GET "/vacancies/edit/980190963" for 127.0.0.1 at Fri Mar 30 15:18:23 +0400 2012
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[35mVacancy Load (1.1ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "980190963"]]
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+  [1m[36mSkill Load (1.0ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 980190963
+Rendered vacancies/_form.html.erb (162.8ms)
+Rendered vacancies/_edit.html.erb (173.8ms)
+Rendered vacancies/edit.html.erb within layouts/application (177.3ms)
+Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 198ms (Views: 179.6ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:18:23 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:23 +0400 2012
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:23 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:23 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:23 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started POST "/vacancies/add_skill/980190963?skill=%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20PHP&selected_skill=" for 127.0.0.1 at Fri Mar 30 15:18:35 +0400 2012
+
+
+Started GET "/vacancies/edit/980190963" for 127.0.0.1 at Fri Mar 30 15:18:35 +0400 2012
+  Processing by VacanciesController#add_skill as */*
+  Parameters: {"id"=>"980190963", "selected_skill"=>"", "skill"=>"Программирование PHP"}
+  [1m[36mVacancy Load (1.6ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  Processing by VacanciesController#edit as JS
+  Parameters: {"id"=>"980190963"}
+  [1m[36mVacancy Load (0.9ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (1.5ms)[0m  [1mSELECT 1 FROM "skills" WHERE "skills"."name" = 'Программирование PHP' LIMIT 1[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "skills" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Fri, 30 Mar 2012 11:18:35 UTC +00:00], ["name", "Программирование PHP"], ["updated_at", Fri, 30 Mar 2012 11:18:35 UTC +00:00]]
+  [1m[36m (19.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 980190963[0m
+Rendered vacancies/_form.html.erb (196.2ms)
+Rendered vacancies/_edit.html.erb (209.7ms)
+Rendered vacancies/edit.html.erb within layouts/application (214.3ms)
+Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 243ms (Views: 223.9ms | ActiveRecord: 14.9ms)
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "skills_vacancies" ("skill_id", "vacancy_id") VALUES ($1, $2)[0m  [["skill_id", 980190963], ["vacancy_id", 980190963]]
+  [1m[35m (7.6ms)[0m  COMMIT
+  [1m[36mSkill Load (1.3ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 980190963[0m
+Rendered vacancies/_skills.html.erb (9.6ms)
+Rendered vacancies/add_skill.js.erb (18.0ms)
+Completed 200 OK in 398ms (Views: 41.1ms | ActiveRecord: 80.6ms)
+
+
+Started GET "/workers" for 127.0.0.1 at Fri Mar 30 15:18:38 +0400 2012
+  Processing by WorkersController#index as HTML
+  [1m[35mWorker Load (0.8ms)[0m  SELECT "workers".* FROM "workers" 
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+Rendered workers/index.html.erb within layouts/application (11.4ms)
+Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 26.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:18:38 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:38 +0400 2012
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:38 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:38 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:38 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/workers/new" for 127.0.0.1 at Fri Mar 30 15:18:39 +0400 2012
+  Processing by WorkersController#new as HTML
+Rendered layouts/menu/_workers.html.erb (0.3ms)
+Rendered workers/_form.html.erb (2.7ms)
+Rendered workers/new.html.erb within layouts/application (17.6ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:18:39 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:39 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:39 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:39 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:39 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (83ms)
+
+
+Started POST "/workers/create" for 127.0.0.1 at Fri Mar 30 15:18:49 +0400 2012
+  Processing by WorkersController#create as HTML
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3U97/pacgWUSkTF9l56vfcNT9qNGZNfcYkVGvWveMTs=", "utf8"=>"✓", "worker"=>{"name"=>"Алексей Борисов", "salary"=>"2322", "contacts"=>"89090588882", "status"=>"В поиске"}}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "workers" ("contacts", "created_at", "name", "salary", "skill_id", "status", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["contacts", "89090588882"], ["created_at", Fri, 30 Mar 2012 11:18:49 UTC +00:00], ["name", "Алексей Борисов"], ["salary", 2322], ["skill_id", nil], ["status", "В поиске"], ["updated_at", Fri, 30 Mar 2012 11:18:49 UTC +00:00]]
+  [1m[36m (25.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://rubyjob.web/workers/edit/980190963
+Completed 302 Found in 46ms
+
+
+Started GET "/workers/edit/980190963" for 127.0.0.1 at Fri Mar 30 15:18:49 +0400 2012
+  Processing by WorkersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[35mWorker Load (0.8ms)[0m  SELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1  [["id", "980190963"]]
+Rendered layouts/menu/_workers.html.erb (0.1ms)
+  [1m[36mSkill Load (0.6ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963
+Rendered workers/_form.html.erb (116.6ms)
+Rendered workers/_edit.html.erb (127.1ms)
+Rendered workers/edit.html.erb within layouts/application (130.2ms)
+Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 149ms (Views: 135.4ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:18:49 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:49 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:49 +0400 2012
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:49 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+Served asset /main.js - 304 Not Modified (1ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:18:52 +0400 2012
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started POST "/workers/add_skill/980190963?skill=%D0%97%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20PHP,%20Ruby&selected_skill=" for 127.0.0.1 at Fri Mar 30 15:19:06 +0400 2012
+
+
+Started GET "/workers/edit/980190963" for 127.0.0.1 at Fri Mar 30 15:19:06 +0400 2012
+  Processing by WorkersController#add_skill as */*
+  Parameters: {"id"=>"980190963", "selected_skill"=>"", "skill"=>"Знание PHP, Ruby"}
+  [1m[36mWorker Load (1.8ms)[0m  [1mSELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  Processing by WorkersController#edit as JS
+  Parameters: {"id"=>"980190963"}
+  [1m[36mWorker Load (0.5ms)[0m  [1mSELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+Rendered layouts/menu/_workers.html.erb (0.1ms)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (6.3ms)[0m  [1mSELECT 1 FROM "skills" WHERE "skills"."name" = 'Знание PHP, Ruby' LIMIT 1[0m
+  [1m[35mSQL (12.2ms)[0m  INSERT INTO "skills" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Fri, 30 Mar 2012 11:19:06 UTC +00:00], ["name", "Знание PHP, Ruby"], ["updated_at", Fri, 30 Mar 2012 11:19:06 UTC +00:00]]
+  [1m[36m (19.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES ($1, $2)[0m  [["skill_id", 980190964], ["worker_id", 980190963]]
+  [1m[35mSkill Load (0.7ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[35m (22.7ms)[0m  COMMIT
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963[0m
+  [1m[35mSkill Load (1.0ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963
+Rendered workers/_form.html.erb (257.9ms)
+Rendered workers/_edit.html.erb (280.9ms)
+Rendered workers/edit.html.erb within layouts/application (289.7ms)
+  [1m[36mSkill Load (4.9ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963[0m
+Rendered workers/_skills.html.erb (17.6ms)
+Rendered workers/add_skill.js.erb (27.9ms)
+Completed 200 OK in 383ms (Views: 53.3ms | ActiveRecord: 110.8ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 327ms (Views: 309.2ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/workers/find/980190963" for 127.0.0.1 at Fri Mar 30 15:19:08 +0400 2012
+  Processing by WorkersController#find as JS
+  Parameters: {"id"=>"980190963"}
+  [1m[36mWorker Load (0.4ms)[0m  [1mSELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mSkill Load (1.5ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "skills_vacancies" ON "skills_vacancies"."skill_id" = "skills"."id" INNER JOIN "vacancies" ON "vacancies"."id" = "skills_vacancies"."vacancy_id" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963
+  [1m[36mSkill Load (1.2ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963[0m
+  [1m[35mSkill Load (1.1ms)[0m  SELECT "skills".* FROM "skills" 
+Completed 500 Internal Server Error in 134ms
+
+NoMethodError (undefined method `levenshtein' for nil:NilClass):
+  app/controllers/workers_controller.rb:71:in `find'
+  app/controllers/workers_controller.rb:68:in `each'
+  app/controllers/workers_controller.rb:68:in `find'
+  app/controllers/workers_controller.rb:66:in `find'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started GET "/vacancies" for 127.0.0.1 at Fri Mar 30 15:20:23 +0400 2012
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (0.8ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/index.html.erb within layouts/application (13.5ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 37ms (Views: 28.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:20:23 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:23 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:23 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:23 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:23 +0400 2012
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/vacancies/edit/298486374" for 127.0.0.1 at Fri Mar 30 15:20:25 +0400 2012
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mVacancy Load (1.1ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+  [1m[36mSkill Load (0.6ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374
+Rendered vacancies/_form.html.erb (119.1ms)
+Rendered vacancies/_edit.html.erb (130.1ms)
+Rendered vacancies/edit.html.erb within layouts/application (133.6ms)
+Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 155ms (Views: 142.7ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:20:25 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:25 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:25 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:25 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:25 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/vacancies/destroy/298486374" for 127.0.0.1 at Fri Mar 30 15:20:29 +0400 2012
+  Processing by VacanciesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3U97/pacgWUSkTF9l56vfcNT9qNGZNfcYkVGvWveMTs=", "id"=>"298486374"}
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "vacancies" WHERE "vacancies"."id" = $1  [["id", 298486374]]
+  [1m[36m (22.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://rubyjob.web/vacancies
+Completed 302 Found in 38ms
+
+
+Started GET "/vacancies" for 127.0.0.1 at Fri Mar 30 15:20:29 +0400 2012
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (1.8ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/index.html.erb within layouts/application (13.6ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 116ms (Views: 29.0ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:20:29 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:29 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:29 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:29 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:29 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/vacancies/edit/980190962" for 127.0.0.1 at Fri Mar 30 15:20:31 +0400 2012
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mVacancy Load (0.4ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "980190962"]]
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+  [1m[35mSkill Load (0.7ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 980190962[0m
+Rendered vacancies/_form.html.erb (132.6ms)
+Rendered vacancies/_edit.html.erb (146.4ms)
+Rendered vacancies/edit.html.erb within layouts/application (150.3ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 157.6ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:31 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:31 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:20:31 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:31 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:31 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/vacancies/destroy/980190962" for 127.0.0.1 at Fri Mar 30 15:20:33 +0400 2012
+  Processing by VacanciesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3U97/pacgWUSkTF9l56vfcNT9qNGZNfcYkVGvWveMTs=", "id"=>"980190962"}
+  [1m[35mVacancy Load (0.6ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "vacancies" WHERE "vacancies"."id" = $1  [["id", 980190962]]
+  [1m[36m (9.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://rubyjob.web/vacancies
+Completed 302 Found in 28ms
+
+
+Started GET "/vacancies" for 127.0.0.1 at Fri Mar 30 15:20:34 +0400 2012
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/index.html.erb within layouts/application (11.7ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 24.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:20:34 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:34 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:34 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:34 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:34 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/workers" for 127.0.0.1 at Fri Mar 30 15:20:35 +0400 2012
+  Processing by WorkersController#index as HTML
+  [1m[36mWorker Load (0.7ms)[0m  [1mSELECT "workers".* FROM "workers" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered workers/index.html.erb within layouts/application (11.3ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 25.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:20:35 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:35 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:35 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:35 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:35 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/workers/edit/298486374" for 127.0.0.1 at Fri Mar 30 15:20:37 +0400 2012
+  Processing by WorkersController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mWorker Load (0.4ms)[0m  SELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1  [["id", "298486374"]]
+Rendered layouts/menu/_workers.html.erb (0.4ms)
+  [1m[36mSkill Load (0.5ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 298486374
+Rendered workers/_form.html.erb (54.6ms)
+Rendered workers/_edit.html.erb (67.0ms)
+Rendered workers/edit.html.erb within layouts/application (71.4ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 137ms (Views: 124.5ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:20:37 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:37 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:37 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:37 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:20:37 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/workers/destroy/298486374" for 127.0.0.1 at Fri Mar 30 15:20:40 +0400 2012
+  Processing by WorkersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3U97/pacgWUSkTF9l56vfcNT9qNGZNfcYkVGvWveMTs=", "id"=>"298486374"}
+  [1m[36mWorker Load (1.2ms)[0m  [1mSELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (6.0ms)[0m  [1mDELETE FROM "workers" WHERE "workers"."id" = $1[0m  [["id", 298486374]]
+  [1m[35m (13.7ms)[0m  COMMIT
+Redirected to http://rubyjob.web/worker
+Completed 302 Found in 41ms
+
+
+Started GET "/worker" for 127.0.0.1 at Fri Mar 30 15:20:40 +0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/worker"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.7ms)
+
+
+Started POST "/workers/destroy/298486374" for 127.0.0.1 at Fri Mar 30 15:21:20 +0400 2012
+  Processing by WorkersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3U97/pacgWUSkTF9l56vfcNT9qNGZNfcYkVGvWveMTs=", "id"=>"298486374"}
+  [1m[36mWorker Load (0.4ms)[0m  [1mSELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Worker with id=298486374):
+  app/controllers/workers_controller.rb:114:in `find_worker'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started GET "/workers/edit/298486374" for 127.0.0.1 at Fri Mar 30 15:21:23 +0400 2012
+  Processing by WorkersController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mWorker Load (0.4ms)[0m  SELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1  [["id", "298486374"]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Worker with id=298486374):
+  app/controllers/workers_controller.rb:114:in `find_worker'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/workers" for 127.0.0.1 at Fri Mar 30 15:21:28 +0400 2012
+  Processing by WorkersController#index as HTML
+  [1m[36mWorker Load (0.8ms)[0m  [1mSELECT "workers".* FROM "workers" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.5ms)
+Rendered workers/index.html.erb within layouts/application (17.7ms)
+Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 32.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:21:28 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:28 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:28 +0400 2012
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:28 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:28 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /main.js - 304 Not Modified (3ms)
+
+
+Started GET "/workers/edit/980190962" for 127.0.0.1 at Fri Mar 30 15:21:29 +0400 2012
+  Processing by WorkersController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mWorker Load (0.4ms)[0m  SELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1  [["id", "980190962"]]
+Rendered layouts/menu/_workers.html.erb (0.3ms)
+  [1m[36mSkill Load (0.8ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190962
+Rendered workers/_form.html.erb (158.8ms)
+Rendered workers/_edit.html.erb (172.5ms)
+Rendered workers/edit.html.erb within layouts/application (176.3ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 197ms (Views: 181.4ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:21:30 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:30 +0400 2012
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:30 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:30 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:30 +0400 2012
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/workers/destroy/980190962" for 127.0.0.1 at Fri Mar 30 15:21:33 +0400 2012
+  Processing by WorkersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3U97/pacgWUSkTF9l56vfcNT9qNGZNfcYkVGvWveMTs=", "id"=>"980190962"}
+  [1m[36mWorker Load (0.4ms)[0m  [1mSELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "workers" WHERE "workers"."id" = $1[0m  [["id", 980190962]]
+  [1m[35m (18.4ms)[0m  COMMIT
+Redirected to http://rubyjob.web/worker
+Completed 302 Found in 36ms
+
+
+Started GET "/worker" for 127.0.0.1 at Fri Mar 30 15:21:33 +0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/worker"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/workers" for 127.0.0.1 at Fri Mar 30 15:21:56 +0400 2012
+  Processing by WorkersController#index as HTML
+  [1m[36mWorker Load (0.6ms)[0m  [1mSELECT "workers".* FROM "workers" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered workers/index.html.erb within layouts/application (8.3ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:21:56 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:56 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:56 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:56 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:56 +0400 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/workers/edit/980190963" for 127.0.0.1 at Fri Mar 30 15:21:58 +0400 2012
+  Processing by WorkersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[35mWorker Load (0.5ms)[0m  SELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1  [["id", "980190963"]]
+Rendered layouts/menu/_workers.html.erb (0.1ms)
+  [1m[36mSkill Load (0.7ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963
+  [1m[36mSkill Load (0.7ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963[0m
+Rendered workers/_form.html.erb (138.2ms)
+Rendered workers/_edit.html.erb (150.4ms)
+Rendered workers/edit.html.erb within layouts/application (153.3ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 173ms (Views: 160.3ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:21:58 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:58 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:58 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:58 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:21:58 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/workers/find/980190963" for 127.0.0.1 at Fri Mar 30 15:22:00 +0400 2012
+  Processing by WorkersController#find as JS
+  Parameters: {"id"=>"980190963"}
+  [1m[35mWorker Load (0.6ms)[0m  SELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mSkill Load (1.5ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "skills_vacancies" ON "skills_vacancies"."skill_id" = "skills"."id" INNER JOIN "vacancies" ON "vacancies"."id" = "skills_vacancies"."vacancy_id" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963[0m
+  [1m[35mSkill Load (0.9ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963
+  [1m[36mSkill Load (0.6ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Completed 500 Internal Server Error in 167ms
+
+NoMethodError (undefined method `levenshtein' for nil:NilClass):
+  app/controllers/workers_controller.rb:71:in `find'
+  app/controllers/workers_controller.rb:68:in `each'
+  app/controllers/workers_controller.rb:68:in `find'
+  app/controllers/workers_controller.rb:66:in `find'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/workers/find/980190963" for 127.0.0.1 at Fri Mar 30 15:22:39 +0400 2012
+  Processing by WorkersController#find as JS
+  Parameters: {"id"=>"980190963"}
+  [1m[35mWorker Load (0.6ms)[0m  SELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mSkill Load (1.5ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "skills_vacancies" ON "skills_vacancies"."skill_id" = "skills"."id" INNER JOIN "vacancies" ON "vacancies"."id" = "skills_vacancies"."vacancy_id" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963[0m
+  [1m[35mSkill Load (2.1ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963
+  [1m[36mSkill Load (1.1ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+Completed 500 Internal Server Error in 148ms
+
+NoMethodError (undefined method `levenshtein' for nil:NilClass):
+  app/controllers/workers_controller.rb:71:in `find'
+  app/controllers/workers_controller.rb:68:in `each'
+  app/controllers/workers_controller.rb:68:in `find'
+  app/controllers/workers_controller.rb:66:in `find'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/workers/find/980190963" for 127.0.0.1 at Fri Mar 30 15:23:33 +0400 2012
+  Processing by WorkersController#find as JS
+  Parameters: {"id"=>"980190963"}
+  [1m[35mWorker Load (0.6ms)[0m  SELECT "workers".* FROM "workers" WHERE "workers"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mSkill Load (1.4ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "skills_vacancies" ON "skills_vacancies"."skill_id" = "skills"."id" INNER JOIN "vacancies" ON "vacancies"."id" = "skills_vacancies"."vacancy_id" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963[0m
+  [1m[35mSkill Load (0.9ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "skills_workers" ON "skills"."id" = "skills_workers"."skill_id" WHERE "skills_workers"."worker_id" = 980190963
+  [1m[36mSkill Load (0.6ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35mVacancy Load (0.9ms)[0m  SELECT "vacancies".* FROM "vacancies" INNER JOIN "skills_vacancies" ON "vacancies"."id" = "skills_vacancies"."vacancy_id" WHERE "skills_vacancies"."skill_id" = 980190963
+Rendered workers/_vacancies.html.erb (2.9ms)
+Rendered workers/find.js.erb (4.7ms)
+Completed 200 OK in 106ms (Views: 15.1ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/vacancies/edit/980190963" for 127.0.0.1 at Fri Mar 30 15:23:37 +0400 2012
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mVacancy Load (0.6ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 980190963[0m
+  [1m[35mSkill Load (1.0ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 980190963
+Rendered vacancies/_form.html.erb (116.4ms)
+Rendered vacancies/_edit.html.erb (127.3ms)
+Rendered vacancies/edit.html.erb within layouts/application (130.5ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 151ms (Views: 137.1ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:23:37 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:23:37 +0400 2012
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:23:37 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:23:37 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:23:37 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/vacancies/find/980190963" for 127.0.0.1 at Fri Mar 30 15:23:39 +0400 2012
+  Processing by VacanciesController#find as JS
+  Parameters: {"id"=>"980190963"}
+  [1m[36mVacancy Load (0.4ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mSkill Load (1.3ms)[0m  SELECT "skills".* FROM "skills" INNER JOIN "skills_workers" ON "skills_workers"."skill_id" = "skills"."id" INNER JOIN "workers" ON "workers"."id" = "skills_workers"."worker_id" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 980190963
+  [1m[36mSkill Load (0.8ms)[0m  [1mSELECT "skills".* FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 980190963[0m
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36mWorker Load (1.0ms)[0m  [1mSELECT "workers".* FROM "workers" INNER JOIN "skills_workers" ON "workers"."id" = "skills_workers"."worker_id" WHERE "skills_workers"."skill_id" = 980190964[0m
+Rendered vacancies/_workers.html.erb (2.5ms)
+Rendered vacancies/find.js.erb (4.0ms)
+Completed 200 OK in 100ms (Views: 13.7ms | ActiveRecord: 15.7ms)

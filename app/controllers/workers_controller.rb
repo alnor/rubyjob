@@ -53,7 +53,7 @@ class WorkersController < ApplicationController
   def destroy
     flash[:notice] = t(:notice_successful_delete) if @worker.destroy
     respond_to do |format|
-      format.html { redirect_to :controller=>'worker',:action => "index"}
+      format.html { redirect_to :controller=>'workers',:action => "index"}
       format.xml  { render :xml=>"ok"}
     end
   end   
@@ -66,7 +66,7 @@ class WorkersController < ApplicationController
     @sub_vacancies=@worker.skills.map do |skill|
       ret=[]
       (Skill.all-@worker.skills).each do |other_skill|
-        
+
         estimate=skill.name.levenshtein(other_skill.name)
         estimate_o=other_skill.name.levenshtein(skill.name)
         
