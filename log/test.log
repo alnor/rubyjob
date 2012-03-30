@@ -1601,3 +1601,147 @@ Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
   [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
   [1m[35m (0.4ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
   [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:41:01', '2012-03-30 11:41:01', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:41:01', '2012-03-30 11:41:01', 980190962)[0m
+  [1m[35mFixture Delete (1.5ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:41:01', '2012-03-30 11:41:01', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:41:01', '2012-03-30 11:41:01', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:41:01', '2012-03-30 11:41:01', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:41:01', '2012-03-30 11:41:01', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.7ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.7ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (18.7ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 11:41:01 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 11:41:01 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 15ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "vacancies" 
+  [1m[36mVacancy Load (0.9ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" LIMIT 1[0m
+  Processing by VacanciesController#destroy as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mVacancy Load (0.9ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "vacancies" WHERE "vacancies"."id" = $1  [["id", 298486374]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/vacancies
+Completed 302 Found in 6ms
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "vacancies" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mVacancy Load (0.5ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" LIMIT 1[0m
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mVacancy Load (0.5ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+  [1m[36mSkill Load (0.7ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374
+Rendered vacancies/_form.html.erb (43.8ms)
+Rendered vacancies/_edit.html.erb (48.1ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 73.3ms | ActiveRecord: 4.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (0.7ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (5.1ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES ('Test2', '2012-03-30 11:41:44', '2012-03-30 11:41:44', 298486374)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES ('Test', '2012-03-30 11:41:44', '2012-03-30 11:41:44', 980190962)[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:41:44', '2012-03-30 11:41:44', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:41:44', '2012-03-30 11:41:44', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:41:44', '2012-03-30 11:41:44', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:41:44', '2012-03-30 11:41:44', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.2ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (1.1ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.8ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (17.9ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 11:41:44 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 11:41:44 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 17ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "vacancies" 
+  [1m[36mVacancy Load (0.7ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" LIMIT 1[0m
+  Processing by VacanciesController#destroy as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mVacancy Load (0.9ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "vacancies" WHERE "vacancies"."id" = $1  [["id", 298486374]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/vacancies
+Completed 302 Found in 6ms
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "vacancies" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mVacancy Load (0.6ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" LIMIT 1[0m
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mVacancy Load (0.5ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+  [1m[36mSkill Load (0.6ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374
+Rendered vacancies/_form.html.erb (40.9ms)
+Rendered vacancies/_edit.html.erb (45.2ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 69.6ms | ActiveRecord: 3.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (0.5ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.2ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
