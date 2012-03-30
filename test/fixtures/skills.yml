@@ -1,7 +1,10 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: Test
+  name: Умение мыть
 
 two:
-  name: Test2
+  name: Программирование на PHP
+
+two:
+  name: Программирование на Ruby

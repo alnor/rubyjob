@@ -35479,3 +35479,66 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:39:08
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:39:08 +0400 2012
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/vacancies" for 127.0.0.1 at Fri Mar 30 15:44:55 +0400 2012
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (0.8ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/index.html.erb within layouts/application (12.0ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 23.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:44:55 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:44:55 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:44:55 +0400 2012
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:44:55 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:44:55 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/vacancies/edit/298486374" for 127.0.0.1 at Fri Mar 30 15:44:56 +0400 2012
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mVacancy Load (0.4ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+  [1m[36mSkill Load (0.5ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374
+Rendered vacancies/_form.html.erb (108.4ms)
+Rendered vacancies/_edit.html.erb (118.9ms)
+Rendered vacancies/edit.html.erb within layouts/application (122.0ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 144ms (Views: 130.8ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Mar 30 15:44:56 +0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Mar 30 15:44:56 +0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Mar 30 15:44:56 +0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Mar 30 15:44:56 +0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at Fri Mar 30 15:44:56 +0400 2012
+Served asset /main.js - 304 Not Modified (0ms)
