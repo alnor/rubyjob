@@ -1,15 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyText
-  lifetime: 1
+  name: Тест
+  lifetime: '2012-04-30'
   salary: 1
-  contacts: MyString
-  skill_id: 1
+  contacts: '1234'
 
 two:
-  name: MyText
-  lifetime: 1
+  name: Тест
+  lifetime: '2012-04-30'
   salary: 1
-  contacts: MyString
-  skill_id: 1
+  contacts: '1234'

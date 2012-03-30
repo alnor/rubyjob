@@ -53,3 +53,1551 @@
   [4;36;1mSkill Load (0.7ms)[0m   [0;1mSELECT * FROM "skills" INNER JOIN "skills_vacancies" ON "skills".id = "skills_vacancies".skill_id WHERE ("skills_vacancies".vacancy_id = NULL ) [0m
   [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
   [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mFixture Delete (1.3ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 08:45:13', '2012-03-30 08:45:13', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 08:45:13', '2012-03-30 08:45:13', 980190962)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 08:45:13', '2012-03-30 08:45:13', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 08:45:13', '2012-03-30 08:45:13', 980190962)
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 08:46:03', '2012-03-30 08:46:03', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 08:46:03', '2012-03-30 08:46:03', 980190962)[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:06:43', '2012-03-30 09:06:43', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:06:43', '2012-03-30 09:06:43', 980190962)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:07:54', '2012-03-30 09:07:54', 298486374)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:07:54', '2012-03-30 09:07:54', 980190962)[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:07:54', '2012-03-30 09:07:54', 298486374)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:07:54', '2012-03-30 09:07:54', 980190962)
+  [1m[36mFixture Delete (1.1ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:42:39', '2012-03-30 09:42:39', 298486374)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:42:39', '2012-03-30 09:42:39', 980190962)[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:46:44', '2012-03-30 09:46:44', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:46:44', '2012-03-30 09:46:44', 980190962)[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:47:11', '2012-03-30 09:47:11', 298486374)
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:47:11', '2012-03-30 09:47:11', 980190962)[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (1.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.8ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:47:11', '2012-03-30 09:47:11', 298486374)[0m
+  [1m[35mFixture Insert (1.4ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:47:11', '2012-03-30 09:47:11', 980190962)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:51:32', '2012-03-30 09:51:32', 298486374)
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:51:32', '2012-03-30 09:51:32', 980190962)[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:52:00', '2012-03-30 09:52:00', 298486374)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:52:00', '2012-03-30 09:52:00', 980190962)[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (4.6ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:52:00', '2012-03-30 09:52:00', 298486374)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:52:00', '2012-03-30 09:52:00', 980190962)
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:55:30', '2012-03-30 09:55:30', 298486374)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:55:30', '2012-03-30 09:55:30', 980190962)[0m
+  [1m[35mFixture Delete (1.3ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.3ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:55:30', '2012-03-30 09:55:30', 298486374)[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:55:30', '2012-03-30 09:55:30', 980190962)
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:56:33', '2012-03-30 09:56:33', 298486374)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:56:33', '2012-03-30 09:56:33', 980190962)[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:56:33', '2012-03-30 09:56:33', 298486374)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:56:33', '2012-03-30 09:56:33', 980190962)
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:58:57', '2012-03-30 09:58:57', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:58:57', '2012-03-30 09:58:57', 980190962)[0m
+  [1m[35mFixture Delete (2.4ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.7ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:58:57', '2012-03-30 09:58:57', 298486374)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:58:57', '2012-03-30 09:58:57', 980190962)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:59:18', '2012-03-30 09:59:18', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:59:18', '2012-03-30 09:59:18', 980190962)[0m
+  [1m[35mFixture Delete (2.0ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (1.3ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:59:50', '2012-03-30 09:59:50', 298486374)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:59:50', '2012-03-30 09:59:50', 980190962)[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:59:50', '2012-03-30 09:59:50', 298486374)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 09:59:50', '2012-03-30 09:59:50', 980190962)
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:00:51', '2012-03-30 10:00:51', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:00:51', '2012-03-30 10:00:51', 980190962)[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:00:51', '2012-03-30 10:00:51', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:00:51', '2012-03-30 10:00:51', 980190962)
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:14:02', '2012-03-30 10:14:02', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:14:02', '2012-03-30 10:14:02', 980190962)[0m
+  [1m[35mFixture Delete (1.6ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:14:02', '2012-03-30 10:14:02', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:14:02', '2012-03-30 10:14:02', 980190962)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:15:14', '2012-03-30 10:15:14', 298486374)
+  [1m[36mFixture Insert (3.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:15:14', '2012-03-30 10:15:14', 980190962)[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:15:14', '2012-03-30 10:15:14', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:15:14', '2012-03-30 10:15:14', 980190962)
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:16:00', '2012-03-30 10:16:00', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:16:00', '2012-03-30 10:16:00', 980190962)[0m
+  [1m[35mFixture Delete (1.6ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "skills"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:16:00', '2012-03-30 10:16:00', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:16:00', '2012-03-30 10:16:00', 980190962)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "skills_workers"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills_workers" () VALUES ()
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:17:07', '2012-03-30 10:17:07', 298486374)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:17:07', '2012-03-30 10:17:07', 980190962)[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "skills_workers" () VALUES ()[0m
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "skills_workers" () VALUES ()
+                                      ^
+: INSERT INTO "skills_workers" () VALUES ()
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:20:12', '2012-03-30 10:20:12', 298486374)
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:20:12', '2012-03-30 10:20:12', 980190962)[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (1.4ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO "workers" ("skill_id", "name", "created_at", "updated_at", "id", "salary", "status_id", "contacts") VALUES (1, 'MyText', '2012-03-30 10:20:12', '2012-03-30 10:20:12', 298486374, 1, 1, 'MyString')
+PG::Error: ERROR:  column "status_id" of relation "workers" does not exist
+LINE 1: ...ame", "created_at", "updated_at", "id", "salary", "status_id...
+                                                             ^
+: INSERT INTO "workers" ("skill_id", "name", "created_at", "updated_at", "id", "salary", "status_id", "contacts") VALUES (1, 'MyText', '2012-03-30 10:20:12', '2012-03-30 10:20:12', 298486374, 1, 1, 'MyString')
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:21:41', '2012-03-30 10:21:41', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:21:41', '2012-03-30 10:21:41', 980190962)[0m
+  [1m[35mFixture Delete (1.4ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:21:41', '2012-03-30 10:21:41', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:21:41', '2012-03-30 10:21:41', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES (1, 'Тест', '2012-03-30 10:21:41', '2012-03-30 10:21:41', 298486374, 1, 1234)[0m
+PG::Error: ERROR:  column "lifetime" is of type date but expression is of type integer
+LINE 1: ..."updated_at", "id", "salary", "contacts") VALUES (1, 'Тест',...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+: INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES (1, 'Тест', '2012-03-30 10:21:41', '2012-03-30 10:21:41', 298486374, 1, 1234)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:23:00', '2012-03-30 10:23:00', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:23:00', '2012-03-30 10:23:00', 980190962)[0m
+  [1m[35mFixture Delete (1.6ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:23:00', '2012-03-30 10:23:00', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:23:00', '2012-03-30 10:23:00', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('0000-00-00', 'Тест', '2012-03-30 10:23:00', '2012-03-30 10:23:00', 298486374, 1, 1234)[0m
+PG::Error: ERROR:  date/time field value out of range: "0000-00-00"
+LINE 1: ..."updated_at", "id", "salary", "contacts") VALUES ('0000-00-0...
+                                                             ^
+: INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('0000-00-00', 'Тест', '2012-03-30 10:23:00', '2012-03-30 10:23:00', 298486374, 1, 1234)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:23:44', '2012-03-30 10:23:44', 298486374)
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:23:44', '2012-03-30 10:23:44', 980190962)[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:23:44', '2012-03-30 10:23:44', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:23:44', '2012-03-30 10:23:44', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:23:44', '2012-03-30 10:23:44', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:23:44', '2012-03-30 10:23:44', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.5ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (1.0ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (1.1ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (17.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  Processing by MainController#index as HTML
+Rendered main/index.html.erb within layouts/application (2.2ms)
+Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:23:56', '2012-03-30 10:23:56', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:23:56', '2012-03-30 10:23:56', 980190962)[0m
+  [1m[35mFixture Delete (1.4ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:23:56', '2012-03-30 10:23:56', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:23:56', '2012-03-30 10:23:56', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:23:56', '2012-03-30 10:23:56', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:23:56', '2012-03-30 10:23:56', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.4ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (1.3ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (18.1ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.8ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:25:43', '2012-03-30 10:25:43', 298486374)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:25:43', '2012-03-30 10:25:43', 980190962)[0m
+  [1m[35mFixture Delete (1.3ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:25:43', '2012-03-30 10:25:43', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:25:43', '2012-03-30 10:25:43', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:25:43', '2012-03-30 10:25:43', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:25:43', '2012-03-30 10:25:43', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.4ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (1.0ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.8ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (16.1ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:27:54', '2012-03-30 10:27:54', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:27:54', '2012-03-30 10:27:54', 980190962)[0m
+  [1m[35mFixture Delete (1.5ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (2.4ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:27:54', '2012-03-30 10:27:54', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:27:54', '2012-03-30 10:27:54', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:27:54', '2012-03-30 10:27:54', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:27:54', '2012-03-30 10:27:54', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.2ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.7ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (31.6ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:27:54 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:27:54 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 19ms
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.5ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:29:54', '2012-03-30 10:29:54', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:29:54', '2012-03-30 10:29:54', 980190962)[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:29:54', '2012-03-30 10:29:54', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:29:54', '2012-03-30 10:29:54', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:29:54', '2012-03-30 10:29:54', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:29:54', '2012-03-30 10:29:54', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.8ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (18.6ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:29:54 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:29:54 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 15ms
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.6ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.6ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:33:28', '2012-03-30 10:33:28', 298486374)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:33:28', '2012-03-30 10:33:28', 980190962)[0m
+  [1m[35mFixture Delete (1.8ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:33:28', '2012-03-30 10:33:28', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:33:28', '2012-03-30 10:33:28', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:33:28', '2012-03-30 10:33:28', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:33:28', '2012-03-30 10:33:28', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.1ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.8ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (12.0ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:33:28 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:33:28 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 16ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVacancy Load (0.9ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 5ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (0.6ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (5.6ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:35:16', '2012-03-30 10:35:16', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:35:16', '2012-03-30 10:35:16', 980190962)[0m
+  [1m[35mFixture Delete (1.4ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:35:16', '2012-03-30 10:35:16', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:35:16', '2012-03-30 10:35:16', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:35:16', '2012-03-30 10:35:16', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:35:16', '2012-03-30 10:35:16', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.3ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.9ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (22.8ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:35:16 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:35:16 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 15ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" LIMIT 1
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[36mVacancy Load (0.9ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374[0m
+Rendered vacancies/_form.html.erb (40.7ms)
+Rendered vacancies/_edit.html.erb (45.7ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 68.6ms | ActiveRecord: 3.8ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.5ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.5ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:36:17', '2012-03-30 10:36:17', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:36:17', '2012-03-30 10:36:17', 980190962)[0m
+  [1m[35mFixture Delete (1.8ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:36:17', '2012-03-30 10:36:17', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:36:17', '2012-03-30 10:36:17', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:36:17', '2012-03-30 10:36:17', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:36:17', '2012-03-30 10:36:17', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.8ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (60.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:36:17 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:36:17 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 16ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" LIMIT 1
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[36mVacancy Load (0.9ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+  [1m[35mSkill Load (0.8ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374[0m
+Rendered vacancies/_form.html.erb (43.1ms)
+Rendered vacancies/_edit.html.erb (48.4ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 75.1ms | ActiveRecord: 4.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.6ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#update as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+Completed 404 Not Found in 1ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:37:13', '2012-03-30 10:37:13', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:37:13', '2012-03-30 10:37:13', 980190962)[0m
+  [1m[35mFixture Delete (1.5ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:37:13', '2012-03-30 10:37:13', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:37:13', '2012-03-30 10:37:13', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:37:13', '2012-03-30 10:37:13', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:37:13', '2012-03-30 10:37:13', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.9ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (17.4ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:37:13 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:37:13 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 15ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mVacancy Load (0.8ms)[0m  SELECT "vacancies".* FROM "vacancies" LIMIT 1
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[36mVacancy Load (1.3ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374[0m
+Rendered vacancies/_form.html.erb (42.6ms)
+Rendered vacancies/_edit.html.erb (47.0ms)
+Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 70.9ms | ActiveRecord: 4.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.5ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.8ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#update as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "id"=>nil, "contacts"=>"1234567890"}}
+Completed 404 Not Found in 1ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:39:11', '2012-03-30 10:39:11', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:39:11', '2012-03-30 10:39:11', 980190962)[0m
+  [1m[35mFixture Delete (1.7ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:39:11', '2012-03-30 10:39:11', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:39:11', '2012-03-30 10:39:11', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:39:11', '2012-03-30 10:39:11', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:39:11', '2012-03-30 10:39:11', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.1ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (21.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:39:11 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:39:11 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 14ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" LIMIT 1
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[36mVacancy Load (0.9ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374[0m
+Rendered vacancies/_form.html.erb (40.0ms)
+Rendered vacancies/_edit.html.erb (44.8ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 68.9ms | ActiveRecord: 4.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.5ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.6ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#update as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "id"=>nil, "contacts"=>"1234567890"}}
+Completed 404 Not Found in 0ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (2.0ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:40:02', '2012-03-30 10:40:02', 298486374)
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:40:02', '2012-03-30 10:40:02', 980190962)[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:40:03', '2012-03-30 10:40:03', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:40:03', '2012-03-30 10:40:03', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:40:03', '2012-03-30 10:40:03', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:40:03', '2012-03-30 10:40:03', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (20.2ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:40:03 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:40:03 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 16ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" LIMIT 1
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[36mVacancy Load (1.0ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.4ms)
+  [1m[35mSkill Load (0.7ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374[0m
+Rendered vacancies/_form.html.erb (39.8ms)
+Rendered vacancies/_edit.html.erb (44.5ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 67.8ms | ActiveRecord: 4.3ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.5ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.3ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:44:36', '2012-03-30 10:44:36', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:44:36', '2012-03-30 10:44:36', 980190962)[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:44:36', '2012-03-30 10:44:36', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:44:36', '2012-03-30 10:44:36', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:44:36', '2012-03-30 10:44:36', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:44:36', '2012-03-30 10:44:36', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (1.2ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (7.4ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:44:36 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:44:36 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 17ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" LIMIT 1
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[36mVacancy Load (1.0ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374[0m
+Rendered vacancies/_form.html.erb (40.5ms)
+Rendered vacancies/_edit.html.erb (45.4ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 71.0ms | ActiveRecord: 3.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.5ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#update as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "id"=>nil, "contacts"=>"1234567890"}}
+Completed 404 Not Found in 1ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:46:46', '2012-03-30 10:46:46', 298486374)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:46:46', '2012-03-30 10:46:46', 980190962)[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:46:46', '2012-03-30 10:46:46', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:46:46', '2012-03-30 10:46:46', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:46:46', '2012-03-30 10:46:46', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:46:46', '2012-03-30 10:46:46', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.2ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (15.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:46:46 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:46:46 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 14ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" LIMIT 1
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[36mVacancy Load (0.9ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374[0m
+Rendered vacancies/_form.html.erb (39.8ms)
+Rendered vacancies/_edit.html.erb (44.7ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 68.4ms | ActiveRecord: 3.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.5ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.5ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#update as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "id"=>nil, "contacts"=>"1234567890"}}
+Completed 404 Not Found in 1ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:47:04', '2012-03-30 10:47:04', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:47:04', '2012-03-30 10:47:04', 980190962)[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:47:04', '2012-03-30 10:47:04', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:47:04', '2012-03-30 10:47:04', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:47:04', '2012-03-30 10:47:04', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:47:04', '2012-03-30 10:47:04', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (14.9ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 10:47:04 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 10:47:04 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 15ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mVacancy Load (0.7ms)[0m  SELECT "vacancies".* FROM "vacancies" LIMIT 1
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[36mVacancy Load (0.9ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374[0m
+Rendered vacancies/_form.html.erb (40.7ms)
+Rendered vacancies/_edit.html.erb (45.5ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 68.6ms | ActiveRecord: 4.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#index as HTML
+  [1m[35mVacancy Load (0.6ms)[0m  SELECT "vacancies".* FROM "vacancies" 
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.9ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#update as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "id"=>nil, "contacts"=>"1234567890"}}
+Completed 404 Not Found in 1ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:50:52', '2012-03-30 10:50:52', 298486374)
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:50:52', '2012-03-30 10:50:52', 980190962)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (2.1ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:50:52', '2012-03-30 10:50:52', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:50:52', '2012-03-30 10:50:52', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:50:52', '2012-03-30 10:50:52', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:50:52', '2012-03-30 10:50:52', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.3ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (1.4ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (13.8ms)[0m  COMMIT
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "skills" [0m
+  [1m[35mSkill Load (0.9ms)[0m  SELECT "skills".* FROM "skills" LIMIT 1
+  Processing by SkillsController#destroy as HTML
+  Parameters: {"skill"=>{"id"=>"298486374"}}
+Completed 404 Not Found in 1ms
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:51:15', '2012-03-30 10:51:15', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:51:15', '2012-03-30 10:51:15', 980190962)[0m
+  [1m[35mFixture Delete (1.5ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:51:15', '2012-03-30 10:51:15', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:51:15', '2012-03-30 10:51:15', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:51:15', '2012-03-30 10:51:15', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:51:15', '2012-03-30 10:51:15', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.1ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (1.2ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (24.5ms)[0m  COMMIT
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "skills" [0m
+  [1m[35mSkill Load (0.9ms)[0m  SELECT "skills".* FROM "skills" LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:51:59', '2012-03-30 10:51:59', 298486374)
+  [1m[36mFixture Insert (3.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 10:51:59', '2012-03-30 10:51:59', 980190962)[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:51:59', '2012-03-30 10:51:59', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 10:51:59', '2012-03-30 10:51:59', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:51:59', '2012-03-30 10:51:59', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 10:51:59', '2012-03-30 10:51:59', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.1ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.8ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (17.7ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "skills" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mFixture Delete (1.2ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:03:31', '2012-03-30 11:03:31', 298486374)
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:03:31', '2012-03-30 11:03:31', 980190962)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:03:31', '2012-03-30 11:03:31', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:03:31', '2012-03-30 11:03:31', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:03:31', '2012-03-30 11:03:31', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:03:31', '2012-03-30 11:03:31', 980190962, 1, '1234')
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (19.3ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "skills" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:04:54', '2012-03-30 11:04:54', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:04:54', '2012-03-30 11:04:54', 980190962)[0m
+  [1m[35mFixture Delete (1.4ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (1.5ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:04:54', '2012-03-30 11:04:54', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:04:54', '2012-03-30 11:04:54', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:04:54', '2012-03-30 11:04:54', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:04:54', '2012-03-30 11:04:54', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.9ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.8ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (12.2ms)[0m  COMMIT
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "skills" [0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (1.5ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:05:30', '2012-03-30 11:05:30', 298486374)
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:05:30', '2012-03-30 11:05:30', 980190962)[0m
+  [1m[35mFixture Delete (1.4ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (1.1ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:05:30', '2012-03-30 11:05:30', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:05:30', '2012-03-30 11:05:30', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:05:30', '2012-03-30 11:05:30', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:05:30', '2012-03-30 11:05:30', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.3ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (26.9ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "skills" [0m
+  [1m[35mSkill Load (1.0ms)[0m  SELECT "skills".* FROM "skills" LIMIT 1
+  Processing by SkillsController#destroy as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[36mSkill Load (0.9ms)[0m  [1mSELECT "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", "298486374"]]
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 298486374]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies
+Completed 302 Found in 7ms
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "skills" [0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:06:15', '2012-03-30 11:06:15', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:06:15', '2012-03-30 11:06:15', 980190962)[0m
+  [1m[35mFixture Delete (1.5ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:06:15', '2012-03-30 11:06:15', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:06:15', '2012-03-30 11:06:15', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:06:15', '2012-03-30 11:06:15', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:06:15', '2012-03-30 11:06:15', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.3ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (1.0ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (18.2ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.5ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 11:06:15 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 11:06:15 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 24ms
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "vacancies" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mVacancy Load (1.0ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" LIMIT 1[0m
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mVacancy Load (2.0ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.5ms)
+  [1m[36mSkill Load (0.8ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374
+Rendered vacancies/_form.html.erb (53.2ms)
+Rendered vacancies/_edit.html.erb (58.6ms)
+Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 98ms (Views: 89.9ms | ActiveRecord: 5.7ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (0.6ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (6.3ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:07:04', '2012-03-30 11:07:04', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:07:04', '2012-03-30 11:07:04', 980190962)[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:07:05', '2012-03-30 11:07:05', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:07:05', '2012-03-30 11:07:05', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:07:05', '2012-03-30 11:07:05', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:07:05', '2012-03-30 11:07:05', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.9ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (18.6ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  Processing by VacanciesController#create as HTML
+  Parameters: {"vacancy"=>{"name"=>"Some name", "contacts"=>"1234567890"}}
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "vacancies" ("contacts", "created_at", "lifetime", "name", "salary", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["contacts", "1234567890"], ["created_at", Fri, 30 Mar 2012 11:07:05 UTC +00:00], ["lifetime", Fri, 30 Mar 2012], ["name", "Some name"], ["salary", nil], ["updated_at", Fri, 30 Mar 2012 11:07:05 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/vacancies/edit/980190963
+Completed 302 Found in 15ms
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "vacancies" [0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "vacancies" 
+  [1m[36mVacancy Load (0.8ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" LIMIT 1[0m
+  Processing by VacanciesController#destroy as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mVacancy Load (0.9ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "vacancies" WHERE "vacancies"."id" = $1  [["id", 298486374]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/vacancies
+Completed 302 Found in 7ms
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "vacancies" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mVacancy Load (0.6ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" LIMIT 1[0m
+  Processing by VacanciesController#edit as HTML
+  Parameters: {"id"=>"298486374"}
+  [1m[35mVacancy Load (0.4ms)[0m  SELECT "vacancies".* FROM "vacancies" WHERE "vacancies"."id" = $1 LIMIT 1  [["id", "298486374"]]
+Rendered layouts/menu/_vacancies.html.erb (0.3ms)
+  [1m[36mSkill Load (0.6ms)[0m  [1mSELECT "skills".* FROM "skills" [0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "skills" INNER JOIN "skills_vacancies" ON "skills"."id" = "skills_vacancies"."skill_id" WHERE "skills_vacancies"."vacancy_id" = 298486374
+Rendered vacancies/_form.html.erb (40.0ms)
+Rendered vacancies/_edit.html.erb (44.6ms)
+Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 69.7ms | ActiveRecord: 3.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  Processing by VacanciesController#index as HTML
+  [1m[36mVacancy Load (0.6ms)[0m  [1mSELECT "vacancies".* FROM "vacancies" [0m
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Processing by VacanciesController#new as HTML
+Rendered layouts/menu/_vacancies.html.erb (0.1ms)
+Rendered vacancies/_form.html.erb (4.5ms)
+Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:07:51', '2012-03-30 11:07:51', 298486374)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:07:51', '2012-03-30 11:07:51', 980190962)[0m
+  [1m[35mFixture Delete (1.5ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:07:51', '2012-03-30 11:07:51', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:07:51', '2012-03-30 11:07:51', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:07:51', '2012-03-30 11:07:51', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:07:51', '2012-03-30 11:07:51', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (1.0ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (0.8ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (14.3ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "workers" DISABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "skills_workers" DISABLE TRIGGER ALL;ALTER TABLE "vacancies" DISABLE TRIGGER ALL[0m
+  [1m[35m (1.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:08:02', '2012-03-30 11:08:02', 298486374)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at", "id") VALUES (NULL, '2012-03-30 11:08:02', '2012-03-30 11:08:02', 980190962)[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "skills_workers"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "skills_workers" ("skill_id", "worker_id") VALUES (1, 1)
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "workers"[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:08:02', '2012-03-30 11:08:02', 298486374, 1, 1234, 1)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "workers" ("name", "created_at", "updated_at", "id", "salary", "contacts", "status") VALUES ('Тест', '2012-03-30 11:08:02', '2012-03-30 11:08:02', 980190962, 1, 1234, 1)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "vacancies"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:08:02', '2012-03-30 11:08:02', 298486374, 1, '1234')[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "vacancies" ("lifetime", "name", "created_at", "updated_at", "id", "salary", "contacts") VALUES ('2012-04-30', 'Тест', '2012-03-30 11:08:02', '2012-03-30 11:08:02', 980190962, 1, '1234')
+  [1m[36mReset sequence (1.1ms)[0m  [1m SELECT setval('"skills_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "skills_id_seq"), (SELECT min_value FROM "skills_id_seq")) FROM "skills"), false)
+[0m
+  [1m[35mReset sequence (0.8ms)[0m   SELECT setval('"workers_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "workers_id_seq"), (SELECT min_value FROM "workers_id_seq")) FROM "workers"), false)
+  [1m[36mReset sequence (1.0ms)[0m  [1m SELECT setval('"vacancies_id_seq"', (SELECT COALESCE(MAX("id")+(SELECT increment_by FROM "vacancies_id_seq"), (SELECT min_value FROM "vacancies_id_seq")) FROM "vacancies"), false)
+[0m
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "workers" ENABLE TRIGGER ALL;ALTER TABLE "skills_vacancies" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "skills_workers" ENABLE TRIGGER ALL;ALTER TABLE "vacancies" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m

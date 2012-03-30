@@ -1,3 +1,4 @@
+
 class String
   def levenshtein(other, ins=1, del=1, sub=1)
     return nil if self.nil?
@@ -31,6 +32,7 @@ class ApplicationController < ActionController::Base
   
   def date_convert_from_post(hash,index)
     if hash
+      return Time.zone.now.strftime("%Y-%m-%d %H:%M") if hash["#{index}(1i)"].nil? || hash["#{index}(2i)"].nil? || hash["#{index}(3i)"].nil?
       hash["#{index}(1i)"]+'-'+ hash["#{index}(2i)"]+'-'+ hash["#{index}(3i)"]
     else
       Time.zone.now.strftime("%Y-%m-%d %H:%M")

@@ -76,6 +76,7 @@ class WorkersController < ApplicationController
       end 
 
       ret.flatten.uniq-@vacancy.flatten.uniq
+      
     end    
     
     respond_to do |format|

@@ -1,15 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyText
+  name: Тест
   salary: 1
-  contacts: MyString
-  status_id: 1
-  skill_id: 1
+  contacts: 1234
+  status: 1
 
 two:
-  name: MyText
+  name: Тест
   salary: 1
-  contacts: MyString
-  status_id: 1
-  skill_id: 1
+  contacts: 1234
+  status: 1

@@ -12,7 +12,6 @@ class VacanciesController < ApplicationController
   end
   
   def new
-    #@sk=Skill.joins(:skills_vacancies=>:vacancy, :skills_workers=>:worker).where(:id=>980190968)
   end  
   
   def edit
@@ -78,6 +77,7 @@ class VacanciesController < ApplicationController
       end 
 
       ret.flatten.uniq-@workers.flatten.uniq
+      
     end
     
     respond_to do |format|
