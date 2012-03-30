@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: Тест
-  salary: 1
+  name: Алексей Н
+  salary: 1000
   contacts: 1234
-  status: 1
+  status: В поиске
 
 two:
-  name: Тест
-  salary: 1
+  name: Никита Б
+  salary: 1000
   contacts: 1234
-  status: 1
+  status: Занят

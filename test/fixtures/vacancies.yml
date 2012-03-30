@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: Тест
+  name: Уборщица
   lifetime: '2012-04-30'
-  salary: 1
+  salary: 1000
   contacts: '1234'
 
 two:
-  name: Тест
+  name: Программист
   lifetime: '2012-04-30'
-  salary: 1
+  salary: 10000
   contacts: '1234'
